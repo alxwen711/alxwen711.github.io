@@ -1,7 +1,10 @@
 ---
+
 layout: page
 title: "About me"
 permalink: /about
+theme: jekyll-theme-slate
+
 ---
 
 ##About the webpage creator
