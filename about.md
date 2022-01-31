@@ -1,8 +1,5 @@
 ---
-
 layout: default
-permalink: /about
-
 ---
 
 ##About the webpage creator
