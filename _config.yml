@@ -2,3 +2,14 @@
 title: Alex's webpage
 description: I post code projects here
 theme: jekyll-theme-slate
+
+navbar-col: "#EA0000"
+navbar-text-col: "#222222"
+navbar-border-col: "#00FF00"
+page-col: "#0000FF"
+text-col: "#004040"
+link-col: "#0040B0"
+footer-col: "#00CC00"
+footer-text-col: "#123456"
+footer-link-col: "#654321"
+footer-hover-col: "#999999"
