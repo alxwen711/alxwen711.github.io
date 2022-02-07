@@ -3,7 +3,7 @@ layout: default
 permalink: /blog
 ---
 
-### 2022
+## 2022
 [January](https://alxwen711.github.io/blog/Jan22)
 
 
