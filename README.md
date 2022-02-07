@@ -1,5 +1,23 @@
 # alxwen711.github.io
-Github webpage
+Hello, welcome to my Github Webpage.
+
+On this website I will be posting some of my coding projects as well as many other code related things. I might also write down some math stuff here as well. For now, since this site is using Jekyll to format everything and make sure that this page is not just a wall of HTML code, the sample text below is being kept here for reference. Once enough has been actually created on this website it will be removed.
+
+[About me](https://alxwen711.github.io/about)
+
+##Todo list
+- **Refactor Python Prime Code**: At the moment the first part is to setup a different page showcasing the updated code, which will be changed to actually be an actual interactive program once I figure out how to add Python plugins and create an interface.
+
+- **Bi-Monthly journal**: I have a private journal but I'm in the process of creating a blog to be updated every two weeks for public viewing if anyone was to wonder what I've been up to.
+
+##Contacts
+
+```
+Gmail: alxwen711@gmail.com
+Linkedin: To actually update soon tm
+
+Best way to contact me is by Gmail, but I'm also available on other various messaging platforms upon request.
+```
 
 ## Welcome to GitHub Pages
 
