@@ -5,18 +5,22 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [About me](https://alxwen711.github.io/about)
 
-##Todo list
+[Blog/journal](https://alxwen711.github.io/blog)
+[Latest post](https://alxwen711.github.io/Jan22)
+
+## Todo list
 - **Refactor Python Prime Code**: At the moment the first part is to setup a different page showcasing the updated code, which will be changed to actually be an actual interactive program once I figure out how to add Python plugins and create an interface.
 
 - **Bi-Monthly journal**: I have a private journal but I'm in the process of creating a blog to be updated every two weeks for public viewing if anyone was to wonder what I've been up to.
 
-##Contacts
+## Contacts
 
 ```
 Gmail: alxwen711@gmail.com
 Linkedin: To actually update soon tm
 
-Best way to contact me is by Gmail, but I'm also available on other various messaging platforms upon request.
+Best way to contact me is by Gmail, but I'm also available 
+on other various messaging platforms upon request.
 ```
 
 ## Welcome to GitHub Pages
