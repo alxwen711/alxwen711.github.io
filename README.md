@@ -6,7 +6,8 @@ On this website I will be posting some of my coding projects as well as many oth
 [About me](https://alxwen711.github.io/about)
 
 [Blog/journal](https://alxwen711.github.io/blog)
-[Latest post](https://alxwen711.github.io/Jan22)
+
+[Latest post](https://alxwen711.github.io/blog/Jan22)
 
 ## Todo list
 - **Refactor Python Prime Code**: At the moment the first part is to setup a different page showcasing the updated code, which will be changed to actually be an actual interactive program once I figure out how to add Python plugins and create an interface.

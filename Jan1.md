@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/Jan22
 ---
 
-[Link back to all posts][https://alxwen711.github.io/blog]
+[Link back to all posts](https://alxwen711.github.io/blog)
 
 ### January 1st-15th
 

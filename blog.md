@@ -4,7 +4,7 @@ permalink: /blog
 ---
 
 ### 2022
-[January][https://alxwen711.github.io/blog/Jan22]
+[January](https://alxwen711.github.io/blog/Jan22)
 
 
 
