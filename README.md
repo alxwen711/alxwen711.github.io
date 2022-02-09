@@ -7,12 +7,12 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [Blog/journal](https://alxwen711.github.io/blog)
 
-[Latest post](https://alxwen711.github.io/blog/Jan22)
+[Latest post](https://alxwen711.github.io/blog/Feb22)
 
 ### Todo list
 - **Refactor Python Prime Code**: At the moment the first part is to setup a different page showcasing the updated code, which will be changed to actually be an actual interactive program once I figure out how to add Python plugins and create an interface.
 
-- **Bi-Monthly journal**: I have a private journal but I'm in the process of creating a blog to be updated every two weeks for public viewing if anyone was to wonder what I've been up to.
+- **Bi-Monthly journal**: Journal setup is complete and I just have to update it now. For January I'll be referring to my private journal to fill in what happened there.
 
 ### Contacts
 
