@@ -19,14 +19,24 @@ The first contest I participated in was [Hello 2022](https://codeforces.com/cont
 
 The problem in question from this first question is [Problem B](https://codeforces.com/contest/1621/problem/B). The solution to this question is quite trivial and is as follows:
 
+<!--note to self to keep code blocks to at most 80 characters, also, this is a comment, it should not show up on the webpage.-->
 ```
-Vasya will buy at most 2 segments. He will only buy the segment containing the minimum possible value, and the segment containing the maximum possible value. Most of the time, the minimum and maximum will be in different segments, meaning that Vasya will buy these 2 segments, but there is the possiblity that he buys only 1 segment if that specific segment contains both the minimum and maximum value. Furthermore, if 2 or more segments contain the minimum/maximum, then Vasya will only buy the cheapest one. Thus, the simplest method is to keep track of 3 segments:
+Vasya will buy at most 2 segments. He will only buy the segment containing 
+the minimum possible value, and the segment containing the maximum possible 
+value. Most of the time, the minimum and maximum will be in different segments, 
+meaning that Vasya will buy these 2 segments, but there is the possiblity that 
+he buys only 1 segment if that specific segment contains both the minimum and 
+maximum value. Furthermore, if 2 or more segments contain the minimum/maximum, 
+then Vasya will only buy the cheapest one. Thus, the simplest method is to 
+keep track of 3 segments:
 
 - Segment A: The cheapest segment containing the minimum value x
 - Segment B: The cheapest segment containing the maximum value y
 - Segment C: The longest segment, if there is a tie for this choose the cheapest one
 
-If C contains y-x+1 elements, then it must contain both x and y, meaning that Vasya would spend min(A+B,C) coins, with the letters referring to the cost of the segments. Otherwise, the cost would be A+B coins.
+If C contains y-x+1 elements, then it must contain both x and y, meaning that 
+Vasya would spend min(A+B,C) coins, with the letters referring to the cost of 
+the segments. Otherwise, the cost would be A+B coins.
 ```
 
 Now, in my sleep deprived state, when I was writing this contest, this was the final attempt I submitted for this question:
