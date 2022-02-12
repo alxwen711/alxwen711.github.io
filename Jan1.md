@@ -41,7 +41,7 @@ the segments. Otherwise, the cost would be A+B coins.
 
 Now, in my sleep deprived state, when I was writing this contest, this was the final attempt I submitted for this question:
 
-```
+```python
 for i in range(int(input())):
     n = int(input())
     low, high, cost = map(int, input().split())
@@ -86,7 +86,7 @@ In all fairness, the quality of code in coding competitions is much lower than t
 
 In comparison, this is an accepted solution I created after the contest as practice:
 
-```
+```python
 import sys
  
 for i in range(int(sys.stdin.readline())):
