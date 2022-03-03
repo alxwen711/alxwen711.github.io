@@ -16,13 +16,14 @@ On this website I will be posting some of my coding projects as well as many oth
 
 ### Contacts
 
-```
+
 Gmail: alxwen711@gmail.com
-Linkedin: To actually update soon tm
+
+Linkedin: [https://www.linkedin.com/in/alex-wen-3b39401b1/](https://www.linkedin.com/in/alex-wen-3b39401b1/) (Note: Profile at the moment is still WIP)
 
 Best way to contact me is by Gmail, but I'm also available 
 on other various messaging platforms upon request.
-```
+
 
 ## Welcome to GitHub Pages
 
