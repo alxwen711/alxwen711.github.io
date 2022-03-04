@@ -12,10 +12,11 @@ On this website I will be posting some of my coding projects as well as many oth
 ### Todo list
 - **Refactor Python Prime Code**: At the moment the first part is to setup a different page showcasing the updated code, which will be changed to actually be an actual interactive program once I figure out how to add Python plugins and create an interface.
 
-- **Bi-Monthly journal**: Journal setup is complete and I just have to update it now. For January I'll be referring to my private journal to fill in what happened there.
+- Find a way to make some of the hyperlinks look nicer than just blue text?
+
+- **About me page**: Goal is to have a more fleshed out about me page, right now there isn't much there
 
 ### Contacts
-
 
 Gmail: alxwen711@gmail.com
 

@@ -3,6 +3,9 @@ layout: default
 permalink: /blog/Mar22
 ---
 
+[Link back to all posts](https://alxwen711.github.io/blog)
+
+
 ## March 1st-15th
 
 ## March 16th-31st
