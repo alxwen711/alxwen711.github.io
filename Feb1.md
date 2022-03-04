@@ -50,8 +50,130 @@ In other news, immediately after Global 19, as part of my prep term for a potent
 
 ## February 15th-28th
 
+I've started writing this entry on March 2nd, so after this, entries will actually be written during or within a few days after the implied time period. Before I go over my bi-monthly CodeForces update, there is a much more important matter to discuss going on in the real world. For those in the future unsure of what I am referring to, on February 24th 2022, Russia began a large scale military invasion into Ukraine. I'm not one to claim to be an expert on this conflict, as there was already a lot of tension since as far as 2014 building up to this war, but that does not change that there is very little, if any, moral justification to Putin's decision to invade Ukraine. It also does not help that in 2022, global military technology has become more powerful and violent, meaning that large scale conflicts have had increasing potential over the years to inflict increasingly large losses of life and suffering. From my viewpoint, the Russian oligarchy are the perpretrators of this unnecessary war for their own self-absorbed motives, and I sincerely hope the best for the people of Ukraine in this unfortunate time. That said, I would like to make it clear that Russia and her citizens are not at a complete fault for this tragedy, for it is the top Russian officials and those who narrowly believe in these false truths that are to blame.
+
+As for something less heavy, I have created a Google Sheets page [here](https://docs.google.com/spreadsheets/d/1aQObaGKSDEtilQrLuxFZ6-naW-EMjr4uTE5LnnNn6tY/edit?usp=sharing) to document my performance on every CodeForces contest I have participated in so far as well as record additional statistics reflecting my performance. As an example, here is a chart showing all 11 rated contests I took part in so far with my rating graphed, as well as a scatterplot of my ELO performance on each contest.  
+
+![Jan-Feb rating chart](/docs/assets/images/JanFebgraph.png)
+
+As such, we begin with the first of 3 contests I took part in during this 2 week period, being [Round 772](https://codeforces.com/contest/1635). This was a nice return to my previous contest form, as unlike the travesties that were my last 2 contests, I actually got through the first 3 problems without much difficulty. I also made some progress on [Problem D](https://codeforces.com/contest/1635/problem/D), but I was unable to find the error within my solution. The basic premise of my solution is as follows:
+```
+Express each of the n integers as a binary number. From there determine the "root"
+of each number as follows:
+
+The "root" is determined as the lowest possible integer that can reach the integer 
+given by applying the x = 2x + 1 and x = 4x operations. It is found when you are unable to strip a '00' or '1' from the right end of the integer's binary form. 
+
+For example, the "root" of 275 is 2 because:
+275 in binary is 100010011
+100010011 -> 1000100 (remove '1' twice)
+1000100 -> 10001 (remove '00')
+10001 -> 1000 (remove '1')
+1000 -> 10 (remove '00')
+
+As such, it is possible to obtain 275 using the operations starting from 2 as follows:
+2 -> 8 -> 17 -> 68 -> 137 -> 275
 
 
+After finding each root of the numbers, group together numbers with the same root. 
+From there, only the shortest binary number of each group matters as it is able to
+obtain any other value within its group. The last step is to determine how many values
+is this number able to obtain. If the shortest number in this group has c digits,
+then it means up to p-c digits can be appended to this number to make new values.
+Let x = p-c, and f(x) be the number of possible values that can be created by adding
+exactly x digits. There are two ways to attain this:
+
+1. Have a number with x-1 digits added and append '1' to it
+2. Have a number with x-2 digits added and append '00' to it
+
+Thus, f(x) = f(x-1) + f(x-2). This clearly resembles the Fibonachi sequence, as:
+
+2 = 1 + 1, 3 = 2 + 1, 5 = 3 + 2, 8 = 5 + 3, 13 = 8 + 5, 21 = 13 + 8...
+
+Furthermore, given up to x digits to append, this means that the number of possible
+attainable values is equal to:
+
+f(x) + f(x-1) + f(x-2) ... + f(2) + f(1) + f(0).
+
+The above sum actually simplifies to f(x+2)-1, and by summing up the number of
+possible values from the shortest binary string for each root, we reach our answer.
+```
+At the moment I am still in the process of upsolving this problem as these two weeks I had a very heavy courseload upon me and did not have much free time to practice. That said, there is a flaw in this solution that results in a wrong answer on pretest 5 that I only found after looking through the fourms, and finding it will be left as an exercise to the reader, with the solution and link to my upsolved solution hopefully in the second March post.
+
+Now if you look at the graph I placed earlier in this post, you may notice that on my 10th rated contest, there is a severe drop in rating, and the green dot for my rating performance is nowhere to be found. That contest is [Education Round 123](https://codeforces.com/contest/1644), and that dip in rating is not an illusion. Remember how I had two really bad contests where my performance on each contest was compareable to someone rated 1200, and how both contests I performed about as badly as my first one, and how I had dropped from being a <span style="color:cyan">**Specialist**</span> to a <span style="color:green">**Pupil**</span> by losing 143 ELO within the span of 4.5 hours?
+
+In this contest, my overall performance was 722 ELO.
+
+I wish I could be joking about the above statement, but my performance on this contest was so bad, there aren't even CodeForces problems designed for this level of skill (or lack of in this case). The easiest problems on CodeForces are rated 800, and I somehow managed to underperform the rating of questions I literally can consistently solve in under 10 minutes each. To those readers who are genuinely trying to improve on CodeForces and are rated under 800 after 6 contests, I apologize, but in all fairness, in this contest, I literally performed at **half** my rating, and proceeded to lose 134 ELO points in probably the worst two hours of coding I've ever committed. [You can even find me in the top 100 of largest rating losses for this contest](https://codeforces.com/contest/1644/ratings?order=BY_RATING_CHANGE_ASC). As a final way of explaining just how out of character a performance this bad was for me, a few hours after the contest, I tried explaining to my brother how badly this contest went with a Legaue of Legends analogy. He stopped me halfway saying that such a performance would not be possible because within an hour, I would be banned off the server for quite literally being that trash.
+
+You might think I'm being too hard on myself, and in fairness, the last sentence in that rant paragraph was intended to be a joke, even though it didn't really work out imo. But what question was it you ask, that caused this insanity? Turns out, [Problem B](https://codeforces.com/contest/1644/problem/B) was the travesty that destroyed me. It's a very simple problem, and this was my 2nd attempt on it, submitted 25 minutes into the contest:
+
+```python
+import sys
+ 
+"""
+1423
+4123
+1432
+4132
+"""
+for i in range(int(sys.stdin.readline())):
+    n = int(sys.stdin.readline())
+    a = 0
+    if n == 3:
+        print("2 3 1")
+        print("1 3 2")
+        print("3 1 2")
+    elif n == 4:
+        print("1 4 2 3")
+        print("1 4 3 2")
+        print("4 3 2 1")
+        print("4 1 3 2")
+    elif n == 5:
+        print("5 1 4 2 3")
+        print("5 1 4 3 2")
+        print("5 4 3 2 1")
+        print("5 4 1 3 2")    
+    else:
+        pairs = n//2
+        for j in range(n):
+            a = j
+            for k in range(pairs):
+                if a % 2 == 1: #reverse order
+                    print(n-k,k+1,end=" ")
+                else:
+                    print(k+1,n-k,end=" ")
+                a = a//2
+            if n % 2 == 1: print(n//2+1,end="")
+            print()
+``` 
+Basically, I had a solution that could always print n proper permutations of length n for every value of n except for a few edge cases with small n values, so I just hard coded in the edge cases for n = 3,4, and 5. Now lets look at the second line of the problem statement again:
+
+```
+Your task is for a given number n print n **distinct** anti-Fibonacci permutations of length n.
+```
+
+Do you see the problem with the code yet? Let me emphasize the important part:
+
+```
+**n distinct anti-Fibonacci permutations of length n**
+```
+
+By now you should be able to see it. If you still cannot find the error, don't worry, because it took me NINE attempts and **106** MINUTES to solve this question. And in SEVEN of those attempts I did not notice this error.
+
+Look at the solution I hard-coded in for n = 5.
+
+There's only 4 print statements there, meaning I gave 4 anti-Fibonacci permutations of length 5. The question asked for n = 5, give 5 distinct anti-Fibonacci permutations of length 5.
+
+I literally lost 134 ELO in a contest because **I was unable to count to five.**
+
+Let that sink in for a moment. Part of this is clearly a problem with my debugging methods, as since the program failed so many times on the second pretest, it likely meant there was something clearly wrong with my solution method as a whole. However, it took nearly 1.5 hours for me to realize the error with my solution method was that in one of my hard-coded solutions, I failed at a task that unironically, literal babies are capable of doing: counting to five. Usually when I fail in a contest, there is lesson to be taken, but this isn't the case. I really don't care what your rating is on CodeForces, or what really easy question you screwed up, I seriously doubt you can say that you not just screwed up at a "mathematical concept" that is taught at an age where most people are still in diapers, but then proceeded to not notice this mistake for EIGHTY minutes straight.
+
+That paragraph really was catharthic for me. I'm writing the second half of this entry the day after I went on a full blown rant last night, and it just shows the unspoken importance of being able to debug code in programming contests. While I did eventually get over this pathetic attempt at this contest, it took me a while to do so. In fact, after the contest, I was livid to the point that I entered [Round 773](https://codeforces.com/contest/1642) pretty much solely out of spite. This does not sound like a big deal until you realize that this contest ran from 2:10AM to 4:10AM. Most contests start at 6:35AM in my timezone, which is still manageable, but for this contest, I forced myself to bed at 7:30PM in an attempt to shift my own body clock in preparation for this contest. Needless to say, my body clock did not adjust to this sudden 3 hour shift in bedtime schedule, but despite this, I did suprisingly well on this contest and still managed to finish the first 3 questions relatively quickly. That said, I strongly recommend against trying to write coding contests at 2 in the morning, as the only reason it was possible for me that one time was because I had the luxury of taking this contest during SFU's Reading Week, meaning I had several days afterwards to fix my sleep schedule.
+
+That concludes the recap of the previous two weeks on CodeForces. Februray as a whole shows that within programming contests, many people when asked how to improve, will likely mention learning data structures or algorithms for certain types of questions, but it is very rare that anyone mentions just how important debugging can be, as it can be the difference between a poor contest and a contest that starts off badly, but ends up being okay. For further detailed statistics on my CodeForces journey it will be best to refer to the Google Sheets page, as there I will also be writing general notes on my thoughts after each contest, while this blog will focus more on my specific approaches to certain questions that are either important overall or played a critical role within the contest for myself.
+
+It will be unlikely that I'll be participating in a CodeForces contest in the next two weeks, as I still have a significant workload from SFU and the only contest on the site that does not overlap with my class times starts on Sunday at 2AM. However, this Saturday I'll be part of an SFU team writing the Division 2 ICPC Pacific Northwest Regional Contest, and it will be my first in person programming competition, as well as my first team programming competition, so instead that will be the focus of my recap in the next entry.
 
 
 Below this is just for reference for now while I get used to markdown
