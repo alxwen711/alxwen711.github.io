@@ -55,7 +55,105 @@ for i in range(int(input())):
 ### Problem Y, Dorm Room Divide
 This was actually a problem no one on our team could solve. As you'll see, we had the right solution, but there was some sort of implementation error that led to 18 failed attempts. Runtime speed was never an issue, as our attempts all used algorithms intended to run in O(n) time.
 
+### Problem T, Square Bounce
+The most complicated part of this question was outputting the final co-ordinate as a pair of fractions. That said, the algorithm itself isn't as complicated as some of the other problems in this contest, as the main difficulty comes from the mechanical implementation of the solution.
 
+The first step is to determine which side of the square the ray will end at. We're given the slope of the ray's direction, and in addition, the sides of the square are all 2 units each. This means if the ray had n bounces on vertical walls (referring to horizontal movement), then it would have (2ns+1)//2 bounces on horizontal walls, where s is the slope given by the question. From there we can use a binary search to find how many bounces on vertical walls occured in the ray path, and if the last bounce was on a vertical wall. The range that we are binary searching across is the number of bounceson vertical walls that occured in the ray. If you find that the ray ended on a vertical wall, then due to the format of the question asking you to output p,q,s,t that represents the co-ordinate (p/q, s/t), q must be 1 and p must be either 1 or -1 to represent the fact that the ray ended on a vertical wall. Determining which of these two walls is simply just checking if the number of vertical wall bounces is even or odd. A similar case applies to the horizontal walls if the ray ended on one of those two walls, with t = 1 and s = 1 or -1 depending on the parity of the number of horizontal wall bounces.
+
+In each case, this leaves us with determining where on the wall the ray stopped. For simplicity I'll assume the ray stopped on a vertical wall as the method for horizontal walls follows a similar path. 
+
+My solution to this question is given below. This was written during the contest which as of writing this entry, happened a month ago, so please excuse the very unintuitive variable names. A brief listing of what each of the important variables is keeping track of is also provided.
+
+```python
+"""
+(horizontal actually refers to vertical walls and vice versa)
+this is because in the time coding, I referred to horizontal and vertical by the
+movement of the ray rather than the orientation of the wall
+
+"""
+from math import gcd
+
+a,b,n  = map(int,input().split())
+n += 1
+def countBounces(mgh,a,b):
+    hd = mgh*2
+    vd = hd*a/b
+    v = (vd+1)//2
+    return mgh+v
+    
+
+lgh = 0
+hgh = 2000000
+endBounces = 0 #ray ends on bounce x on hor wall if True, ver wall otherwise
+hor = False
+while hgh - lgh != 1:
+    mgh = (lgh+hgh)//2
+    tb = countBounces(mgh,a,b)
+    if tb == n:
+        hor = True
+        endBounces = mgh
+        #print(mgh)
+        break #all conditions met, ending is on a horizontal wall
+    elif tb > n: hgh = mgh
+    else: lgh = mgh
+
+#print(lgh, hgh)
+if not hor:
+    if countBounces(lgh,a,b) == n:
+        hor = True
+        endBounces = lgh
+    elif countBounces(hgh,a,b) == n:
+        hor = True
+        endBounces = hgh
+    else:
+        remaining = n - countBounces(lgh,a,b)
+        endBounces = remaining + countBounces(lgh,a,b) - lgh #total vertical bounces
+p,q,r,s = 1,1,1,1
+
+if hor: #ends on horizontal
+    hb = int(endBounces)
+    vb = int(n - hb)
+    if hb % 2 == 0:
+        p = -1
+    #determine rs
+    hd = hb*2
+    numer = int(hd*a)
+    denom = int(b)
+    numer += (3*denom)
+    cycles = (numer/denom)//4
+    numer -= cycles*4*denom
+    if numer <= denom*2: #less or equal to 2
+        numer = denom - numer
+    else:
+        numer = numer - (3*denom)
+    #print(numer,denom)
+    div = gcd(int(numer),int(denom))
+    r = int(numer//div)
+    s = int(denom//div)
+
+else: #ends on vertical
+    vb = int(endBounces)
+    hb = int(n - vb)
+    if vb % 2 == 0:
+        r = -1
+    #determine pq
+    vd = vb * 2 - 1
+    numer = int(vd*b)
+    denom = int(a)
+    cycles = (numer/denom)//4
+    numer -= cycles*4*denom
+    if numer <= denom*2:
+        numer -= denom
+    else:
+        numer = (denom*3) - numer
+    #print(numer,denom)
+    div = gcd(int(numer),int(denom))
+    p = int(numer//div)
+    q = int(denom//div)
+
+print(p,q,r,s)
+
+```
 
 ## March 16th-31st
 
