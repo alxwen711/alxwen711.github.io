@@ -176,27 +176,3 @@ That concludes the recap of the previous two weeks on CodeForces. Februray as a 
 It will be unlikely that I'll be participating in a CodeForces contest in the next two weeks, as I still have a significant workload from SFU and the only contest on the site that does not overlap with my class times starts on Sunday at 2AM. However, this Saturday I'll be part of an SFU team writing the Division 2 ICPC Pacific Northwest Regional Contest, and it will be my first in person programming competition, as well as my first team programming competition, so instead that will be the focus of my recap in the next entry.
 
 
-Below this is just for reference for now while I get used to markdown
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for 
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
