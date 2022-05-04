@@ -60,7 +60,7 @@ The most complicated part of this question was outputting the final co-ordinate 
 
 The first step is to determine which side of the square the ray will end at. We're given the slope of the ray's direction, and in addition, the sides of the square are all 2 units each. This means if the ray had n bounces on vertical walls (referring to horizontal movement), then it would have (2ns+1)//2 bounces on horizontal walls, where s is the slope given by the question. From there we can use a binary search to find how many bounces on vertical walls occured in the ray path, and if the last bounce was on a vertical wall. The range that we are binary searching across is the number of bounceson vertical walls that occured in the ray. If you find that the ray ended on a vertical wall, then due to the format of the question asking you to output p,q,s,t that represents the co-ordinate (p/q, s/t), q must be 1 and p must be either 1 or -1 to represent the fact that the ray ended on a vertical wall. Determining which of these two walls is simply just checking if the number of vertical wall bounces is even or odd. A similar case applies to the horizontal walls if the ray ended on one of those two walls, with t = 1 and s = 1 or -1 depending on the parity of the number of horizontal wall bounces.
 
-In each case, this leaves us with determining where on the wall the ray stopped. For simplicity I'll assume the ray stopped on a vertical wall as the method for horizontal walls follows a similar path. 
+In each case, this leaves us with determining where on the wall the ray stopped. For simplicity I'll assume the ray stopped on a vertical wall as the method for horizontal walls follows a similar path. If the ray stopped on a vertical wall, then the number of bounces on vertical walls can be used to track the total horizontal distance the ray travelled. Using the initial slope of the ray alongside this gives us the total vertical distance travelled by the ray. With the total vertical distance known, the position of the ray on the vertical wall as a y-coordinate value is easy to find. Letting c = y%4, where y is the vertical distance travelled, the y-coordinate is either 1-abs(c-2) if c <= 2, or -1-abs(c-3) if c > 2. If the ray ended on a horizontal wall a simlar line of thought is taken. The above calculations are all possible to do exactly if fractions are used.
 
 My solution to this question is given below. This was written during the contest which as of writing this entry, happened a month ago, so please excuse the very unintuitive variable names. A brief listing of what each of the important variables is keeping track of is also provided.
 
@@ -70,6 +70,19 @@ My solution to this question is given below. This was written during the contest
 this is because in the time coding, I referred to horizontal and vertical by the
 movement of the ray rather than the orientation of the wall
 
+a, b, and n in the variables are the same as they are in the question;
+slope of the ray is a/b and the ray bounces n times
+
+lgh and hgh refer to the range on the number of possible bounces on vertical walls
+the ray had, the exact value is found via binary search, with mgh being the middle
+
+hd -> horizontal distance
+vd -> vertical distance
+hor -> bool value for determining if the ray ended on a vertical or horizontal wall
+tb -> total bounces
+
+numer and demon are for numerator and denominator in the fraction calculation
+cycles is used as part of the % 4 operation for determining position on the stop wall
 """
 from math import gcd
 
@@ -154,6 +167,9 @@ else: #ends on vertical
 print(p,q,r,s)
 
 ```
+
+In all, even if this contest was arguably the most exhausting one being five hours in length, the group dynamic made this a very fun experience and I will definitely be competing in this ICPC Northwest Regional again next year in the more advanced Division 1. In other news, I also started practicing on Leetcode this month as well, mainly for brushing up on fundemental coding techniques, and to actually apply algorithms and data structures I've learnt from CMPT307 in practice for future competitions. Link to my current profile is [here](https://leetcode.com/alxwen711/)
+
 
 ## March 16th-31st
 
