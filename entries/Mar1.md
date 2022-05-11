@@ -193,6 +193,11 @@ I also went in the contest immediately after this one, being [Round 779](https:/
 
 - By the logic above you can basically copy and paste what I said in the previous bullet point for Problem F, except that I have yet to see a contest where more than 100 people solve Problem F. Usually the solve count is under 30.
 
+The few contests I took part in this month in all went relatively well, except for the one where I had about 4 hours of sleep, which is understandable. With the lack of any actual practice for these contests (mainly through practice contests and upsolving), I'm suprised I actually did decently well this month.
+
+I am completing this entry on May 10th, so I can't exactly say what I think about what will happen in the upcoming weeks in April, since that has already happened. For that I'll simply refer to [next month's post](/blog/Apr22).
+
+
 Below this is just for reference for now while I get used to markdown
 ### Markdown
 
