@@ -7,6 +7,19 @@ permalink: /blog/Apr22
 
 ## April 1st-15th
 
+Welcome back to my attempt to catch up this journal to the current present day of May 11th. Optimistically, at the rate I'm going, this journal will finally be up to date by the time the May entries are finished. While the courseload I was taking this term was being a massive pain as usual, these two weeks were actually quite tame compared to the last month, even if one of my finals was on April 13th. With the spring term coming to a close, and my recent results in past contests being not bad for a change, my confidence at this point was actually good. 
 
+What proceeded to occur these two weeks were two of my best contests runs yet. Going into [Round 781](https://codeforces.com/contest/1665#) I was still looking to return to the <span style="color:cyan">**Specialist**</span> level as I was still at 1398 ELO before this contest. By the end of this contest though, I would gain 148 ELO with an estimated contest performance level of **1922** ELO. It's actually a bit unusual how I pulled this off, as I still only solved 3 of the 5 problems in this contest, but although [Problem C](https://codeforces.com/contest/1665/problem/C) was not solved for me since I have a weak point with tree related problems, this was my first contest where I fully solved [Problem D](https://codeforces.com/contest/1665/problem/D). Problem D itself is an example of what I mean when the question difficulty pivots from implementation to actually determining the solution; Problem C's solution is relatively easier to find as it just requires simulating the tree, and then using a greedy method by choosing to infect whichever node has the most healthy children remaining. I ended up finding this solution but was unable to implement it in a viable O(n) or O(n log n) time successfully. Problem D on the other hand is trickier to figure out how to solve the problem to begin with, but I figured out the solution, implementing it was actually quite simple compared to Problem C. The editorial for the contest explains the solution to this problem as well as an alternative method that can determine the number in at most 22 queries instead of 30 needed for the method I used, but as a hint, you can determine the value x by using each query to determine one bit at a time; the first query should be used to determine the bit with a value of 1, then the second query builds on that info to determine the bit with a value of 2, then the third query uses that info to determine the bit with a value of 4, and so on. Due to Problem D being worth more points than Problem C, I effectively beat everyone in the contest who solved Problems A to C, and lose to everyone who solved at least Problems A to D. Combined with my speed in solving the problems, this contest was my first time gaining over 100 effective ELO, my first top 500 finish in a contest, my first time solving a 2000-rated problem (prior to this, my best solve was a 1600-rated problem), my first <span style="color:purple">**Candidate Master**</span> level performance, AND it brought me back within striking distance of my original goal of reaching <span style="color:blue">**Expert**</span> in 6 months, being only 54 ELO away from 1600.
+
+After that breakout performance, it is reasonable to think that the next contest I took part in, [Educational Round 126](https://codeforces.com/contest/1661), my performance would be more inline with previous contests. And it was, but not by that much. I still solved 3 out of 6 problems, and while there was no miracle Problem D solve, my speed on the first 3 problems was good enough to give me a back-to-back top 1000 finish in contests, and this 1818 ELO level performance was enough to push my rating to 1618.
+
+I have done it, I have officially reached <span style="color:blue">**Expert**</span> on CodeForces.
 
 ## April 16th-30th
+
+
+
+![Mar-Apr rating graph (I did it.)](/docs/assets/images/MarAprgraph.png)
+
+
+
