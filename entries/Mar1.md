@@ -198,28 +198,3 @@ The few contests I took part in this month in all went relatively well, except f
 I am completing this entry on May 10th, so I can't exactly say what I think about what will happen in the upcoming weeks in April, since that has already happened. For that I'll simply refer to [next month's post](/blog/Apr22).
 
 
-Below this is just for reference for now while I get used to markdown
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for 
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
