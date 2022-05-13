@@ -13,7 +13,13 @@ What proceeded to occur these two weeks were two of my best contests runs yet. G
 
 After that breakout performance, it is reasonable to think that the next contest I took part in, [Educational Round 126](https://codeforces.com/contest/1661), my performance would be more inline with previous contests. And it was, but not by that much. I still solved 3 out of 6 problems, and while there was no miracle Problem D solve, my speed on the first 3 problems was good enough to give me a back-to-back top 1000 finish in contests, and this 1818 ELO level performance was enough to push my rating to 1618.
 
-I have done it, I have officially reached <span style="color:blue">**Expert**</span> on CodeForces.
+I have done it, I have officially reached <span style="color:blue">**Expert**</span> on CodeForces. Throughout the last 4 months, the most significant challenge was consistency. You see, to reach 1600 ELO, there is two main paths to doing so:
+
+1. Consistently solve Problems A through C on Division 2 level contests at a relatively fast pace each contest, how fast depends on the difficulty of Problem C, or:
+
+2. Have a high enough skill cap to at least occasionally be able to solve Problem D, and rely on gaining significant rating from the contests where you can solve A through D to offset losses when you can only solve A to C slowly or worse. 
+
+For most contests I have the structual knowledge to solve Problems A through C each time, but I would have inconsistent contests at times where I either failed to solve Problem C, or would end up taking an egrigiously long time to solve the easier Problem B. 
 
 ## April 16th-30th
 
