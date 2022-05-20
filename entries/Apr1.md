@@ -19,9 +19,19 @@ I have done it, I have officially reached <span style="color:blue">**Expert**</s
 
 2. Have a high enough skill cap to at least occasionally be able to solve Problem D, and rely on gaining significant rating from the contests where you can solve A through D to offset losses when you can only solve A to C slowly or worse. 
 
-For most contests I have the structual knowledge to solve Problems A through C each time, but I would have inconsistent contests at times where I either failed to solve Problem C, or would end up taking an egrigiously long time to solve the easier Problem B. 
+For most contests I have the structual knowledge to solve Problems A through C each time, but I would have inconsistent contests at times where I either failed to solve Problem C, or would end up taking an egrigiously long time to solve the easier Problem B. As such, the main improvement I made over the last 4 months was being able to apply mathematical knowledge to the more complex problems more consistently. Naturally the main cause of this improvement is doing more practice problems. In particular for practicing, doing problems rated from 800 up to around 100-200 points above your skill level evenly is optimal; most guides will tell you to always do problems around 100-200 points above your level, but equally as important is being able to solve easier problems consistently and quickly so that you are left with enough time to tackle the harder problems at your skillcap. That and making sure you are actually physically and mentally prepared for the contest are key to actually doing well.
+
+In other news besides me reaching my CodeForces goal 2 months early, I turned 20 on April 5th. Happy birthday to me. 
 
 ## April 16th-30th
+
+The second half of April, looking at my pretty much blank GitHub submissions and my pretty much non-existant journal entries from this time, were a result of two things:
+
+1. SFU Spring Term *finally* ended, and for lack of a better explanation, all the stress from that term pretty much recoiled back to me and I pretty much burnt out for a solid week, and
+
+2. There's still final exams. Not going to say which course, but for one particular course, due to the mess that was last month, I pretty much was forced to "learn" (ie. cram) half of the course material in about 6 days. I'm still not exactly sure how I pulled through that.
+
+Combine the above with the fact that this entry was started on May 20th and it's understandable that my recollection of the 3 competitions that occured in this period are a bit foggy. Regardless, I'll do my best in recapping them:
 
 
 
