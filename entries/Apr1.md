@@ -33,7 +33,20 @@ The second half of April, looking at my pretty much blank GitHub submissions and
 
 Combine the above with the fact that this entry was started on May 20th and it's understandable that my recollection of the 3 competitions that occured in this period are a bit foggy. Regardless, I'll do my best in recapping them:
 
+If you recall from the previous journal entry, you might remember that the main reason I was able to reach <span style="color:blue">**Expert**</span> was solely because I had improved my "skillcap", meaning that I am able to solve the harder problems occasionally, even though my consistency on easier problems was still lacking. [Round 782](https://codeforces.com/contest/1659) and [Round 783](https://codeforces.com/contest/1668) were both proof of this. In the first of these contests, I solved Problem A quite easily, but then proceeded to implode on [Problem B](https://codeforces.com/contest/1659/problem/B) with 8 TLE submissions. The second contest went marginally better, as I did solve the first 3 questions successfully, but my process in solving [Problem C](https://codeforces.com/contest/1668/problem/C) could only be described as a dumpster fire. Below is my submission history in the contest for this problem, with the times on the left indicating the amount of time passed in the 2 hour contest.
 
+![Yea, it was a mess.](/docs/assets/images/783yikes.png)
+
+These two contests, while they were mild failures for me considering how well I had been doing recently, were actually very good learning experiences in many ways. To start, even though it looks like at first Round 782 went much worse than Round 783 solely based of the number of problems solved, rating analysis finds that my performance on these two contests were 1255 and 1270 ELO respectively, which point to similar significant underperformances, but not as catastrophic as the ["I can't count to five" incident.](https://alxwen711.github.io/blog/Feb22) The similar performance levels also gives an indication to how CodeForce contest difficulty can vary; CodeForces contest difficulty variance is a topic that deserves it's own post entirely (it will be linked here eventually), but in this case, this table represents approximate percentages of people solving each problem:
+
+| Problem | Low Solve Rate | High Solve Rate |
+|---------|----------------|-----------------|
+| A       | 90%            | 99.5%           |
+| B       | 60%            | 85%             |
+| C       | 15%            | 45%             |
+| D       | 5%             | 15%             |
+| E       | 0.25%          | 3%              |
+| F+      | 0.01%          | 0.7%            |
 
 ![Mar-Apr rating graph (I did it.)](/docs/assets/images/MarAprgraph.png)
 

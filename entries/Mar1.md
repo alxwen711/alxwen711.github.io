@@ -183,7 +183,7 @@ I also went in the contest immediately after this one, being [Round 779](https:/
 
 - Problem A is usually a basic implementation or math problem that is intended to be solvable for everyone. As such, usually about 95% of participants are able to solve this problem.
 
-- Problem B tends to require more reasoning to figure out the solution, but is best thought of a "complex Problem A"; usually it is still basic implementation and knowledge of data structures other than arrays is usually not vital. The success rate of Problem B is more variable, but it is usually around 70-80%
+- Problem B tends to require more reasoning to figure out the solution, but is best thought of a "complex Problem A"; usually it is still basic implementation and knowledge of data structures other than arrays is usually not vital. The success rate of Problem B is more variable, but it is usually around 60-85%.
 
 - Problem C is when basic data structure knowledge (trees, graphs, bitmasks) or basic techniques (dp, greedy, DFS) are needed, but only at a basic level. Furthermore, even here the main challenge could still just be implementing the solution. Problem C is where difficulty can be quite variable, as the success rate can be anywhere from 15-45%. The intended difficulty of Problem C is frequently related to the scoring scheme of the contest, more detailed analysis on this in a future post.
 
@@ -191,9 +191,20 @@ I also went in the contest immediately after this one, being [Round 779](https:/
 
 - Problem E is another significant difficulty jump, and I cannot accurately comment on what exactly is needed to be able to solve this consistently seeing that I have never solved a Problem E before. What I can say is that the success rate for E tends to be at most 3%, and only a few hundred people tops will solve E in a given contest.
 
-- By the logic above you can basically copy and paste what I said in the previous bullet point for Problem F, except that I have yet to see a contest where more than 100 people solve Problem F. Usually the solve count is under 30.
+- By the logic above you can basically copy and paste what I said in the previous bullet point for Problem F, except that I have yet to see a contest where more than 100 people solve Problem F. Usually the solve count is under 30. Problems after this in a 2 hour contest tend to be rare, but usually Problem G,H, and so on have the same scenario as problem F.
 
 The few contests I took part in this month in all went relatively well, except for the one where I had about 4 hours of sleep, which is understandable. With the lack of any actual practice for these contests (mainly through practice contests and upsolving), I'm suprised I actually did decently well this month.
+
+The solve rates can be summed up in this table, with low solve rate being for a relatively hard problem and high solve rate being for a relatively easy problem:
+
+| Problem | Low Solve Rate | High Solve Rate |
+|---------|----------------|-----------------|
+| A       | 90%            | 99.5%           |
+| B       | 60%            | 85%             |   
+| C       | 15%            | 45%             |   
+| D       | 5%             | 15%             |   
+| E       | 0.25%          | 3%              |   
+| F+      | 0.01%          | 0.7%            | 
 
 I am completing this entry on May 10th, so I can't exactly say what I think about what will happen in the upcoming weeks in April, since that has already happened. For that I'll simply refer to [next month's post](/blog/Apr22).
 
