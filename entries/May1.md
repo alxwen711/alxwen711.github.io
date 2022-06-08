@@ -50,11 +50,14 @@ There’s no other way to say it: I did well on this one.
 Problems A and B were solved quickly without much trouble. [Problem C](https://codeforces.com/contest/1684/problem/C) was interesting, but not because of the problem itself. The solution to C is quite simple:
 
 - Check if each row is sorted. If they are, then no swap is needed, and something like “1 1” can be outputted.
+
 - If a row is unsorted, copy it and check how many values differ.
+
 - If exactly two values differ, swap the two columns with wrong values and check again. Otherwise, 3+ values differ, and 1 swap cannot fix the grid.
+
 - If after a swap there is still an unsorted row, then 1 swap cannot fix the grid.
 
-It’s a simple solution, and I had no problems with it. So did around 6000 other coders, but what proceeded to happen is a phenomenon that I like to call a STA, a System Test Armageddon. From the 6736 coders who made a submission on Problem C, only 2935 received the Accepted verdict, meaning that nearly half of all submissions were victims of passing the pretests, but failing on a main test. This is a regular occurrence on CodeForces, but to see a STA of this scale is very rare, and is usually caused by pretests missing a key edge testcase. This wasn’t a language based issue like I initially thought, and the reasons behind this STA are still out of my grasp. What I can say is that within Python, there is already a built in sorting algorithm called with .sort(), and it’s best to rely on these in contests rather than creating ones that could be error prone, since most submissions that failed the main tests did so on a case where the array had duplicate values, something that could be unaccounted for by self-made sorting algorithms.
+It’s a simple solution, and I had no problems with it. So did around 6000 other coders, but what proceeded to happen is a phenomenon that I like to call a **STA**, a System Test Armageddon. From the 6736 coders who made a submission on Problem C, only 2935 received the Accepted verdict, meaning that nearly half of all submissions were victims of passing the pretests, but failing on a main test. This is a regular occurrence on CodeForces, but to see a STA of this scale is very rare, and is usually caused by pretests missing a key edge testcase. This wasn’t a language based issue like I initially thought, and the reasons behind this STA are still out of my grasp. What I can say is that within Python, there is already a built in sorting algorithm called with .sort(), and it’s best to rely on these in contests rather than creating ones that could be error prone, since most submissions that failed the main tests did so on a case where the array had duplicate values, something that could be unaccounted for by self-made sorting algorithms.
 
 [Problem D](https://codeforces.com/contest/1684/problem/D) was different in that I still have no idea why my algorithm works, but I somehow got the Accepted verdict. The method I used is as follows:
 
@@ -67,7 +70,7 @@ It’s a simple solution, and I had no problems with it. So did around 6000 othe
 
 The score metric is not an actual representation of how much damage can be saved by skipping the given trap, and yet this algorithm works. Such success was found by 2225 other competitors, giving this problem a 17% clear rate, which is high for a Problem D until you account that this was an open rating contest, meaning that the success rate on mid level Problems C to E are likely inflated compared to normal Division 2 contests.
 
-Overall, I finished in the top 750 competitors in an open contest, I completed 4 problems in a Division 2 level contest for the 3rd time, and I nearly had a <span style=”color:orange”>**Master**</span> level performance. Pretty good if I say so myself.
+Overall, I finished in the top 750 competitors in an open contest, I completed 4 problems in a Division 2 level contest for the 3rd time, and I nearly had a <span style="color:orange">**Master**</span> level performance. Pretty good if I say so myself.
 
 ### [Round 794](https://codeforces.com/contest/1686)
 

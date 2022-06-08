@@ -7,7 +7,7 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [Blog/journal](https://alxwen711.github.io/blog)
 
-[Latest post](https://alxwen711.github.io/blog/Apr22)
+[Latest post](https://alxwen711.github.io/blog/May22)
 
 ### Todo list
 (Highlighted are top priority)
