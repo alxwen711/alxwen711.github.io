@@ -40,7 +40,9 @@ Anyways, there are three Codeforces contests to recap. I’m also experimenting 
 ### [Round 792](https://codeforces.com/contest/1684)
 
 Problems Solved: A, B, C, D
+
 New Rating: **1719** (+117)
+
 Performance: **2067**
 
 There’s no other way to say it: I did well on this one.
@@ -66,4 +68,31 @@ It’s a simple solution, and I had no problems with it. So did around 6000 othe
 The score metric is not an actual representation of how much damage can be saved by skipping the given trap, and yet this algorithm works. Such success was found by 2225 other competitors, giving this problem a 17% clear rate, which is high for a Problem D until you account that this was an open rating contest, meaning that the success rate on mid level Problems C to E are likely inflated compared to normal Division 2 contests.
 
 Overall, I finished in the top 750 competitors in an open contest, I completed 4 problems in a Division 2 level contest for the 3rd time, and I nearly had a <span style=”color:orange”>**Master**</span> level performance. Pretty good if I say so myself.
+
+### [Round 794](https://codeforces.com/contest/1686)
+
+Problems Solved: A, B, C
+
+New Rating: **1714** (-5)
+
+Performance: **1694**
+
+The loss in rating from this contest is more a result of myself inflating my rating from doing so well in the previous contest rather than underperforming here. If anything, this contest is a reflection of my goal for most contests. I solved the first three problems very quickly which left me over 90 minutes to attempt [Problem D](https://codeforces.com/contest/1686/problem/D). The only issue with this strategy is that this was a SpeedForces contest, seeing that the success rate from Problem C to Problem D dropped from 50.2% to 2.27%. Let’s just say, when there are coders in the top 300 that only solved 3 questions in this contest with nearly 10000 coders, that means Problem D was a massive difficulty spike. For those glancing at this question, it is not as simple as counting how many “AB” and “BA” sequences are possible. The problem tags indicate there is a greedy method to choosing which parts of the string are used for AB or BA; the furthest I got into solving this was that most likely you need to keep track of alternating substrings. Alternate substrings being substrings that are “ABABABA…” or “BABABAB…”, and allocate the 2 letter words to each of these starting from shortest to longest.
+
+Upon writing the above I think I may have an idea for how to solve this question. I will further update this if I do have a working solution.
+
+### [Round 795](https://codeforces.com/contest/1691)
+
+Problems Solved: A, B, C
+
+New Rating: **1677**(-37)
+
+Performance: **1573**
+
+I could almost copy and paste the first 3 sentences from the previous contest, except with [Problem C](https://codeforces.com/contest/1691/problem/C) I ended up having 4 wrong submissions before solving it. This wasn’t due to lack of knowledge as was more myself not considering all possible cases in the question. [Problem D](https://codeforces.com/contest/1691/problem/D) however is a sign that I might need to improve on questions involving binary search because the thought of using it never came to my mind.
+
+That sums up the contests from the fifth month this year. As a last note for this entry, my future plans for this blog are mainly for my writing skills. Originally this was meant to be a place to mainly discuss the coding work I have done with this website, but the entire thing is pretty much just basic Markdown usage, so there would not be much to discuss on that front. As such, future entries are more focused on retaining this biweekly post structure, but being “more effective” in writing. What I mean by this is expressing information in a more efficient manner, since I have the issue in formal and casual writing to sometimes use absurdly long (50+ words) sentences.
+
+That’s about it for May, and now I can officially say this blog is up to date. :D
+
 
