@@ -7,6 +7,8 @@ permalink: /blog
 
 ## 2022
 
+[June](https://alxwen711.github.io/blog/Jun22)
+
 [May](https://alxwen711.github.io/blog/May22)
 
 [April](https://alxwen711.github.io/blog/Apr22)
