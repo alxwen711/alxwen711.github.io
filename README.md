@@ -7,12 +7,12 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [Blog/journal](https://alxwen711.github.io/blog)
 
-[Latest post](https://alxwen711.github.io/blog/May22)
+[Latest post](https://alxwen711.github.io/blog/Jun22)
 
 ### Todo list
 (Highlighted are top priority)
 
-- **Update the journal to realtime**: As of writing this on May 11th I still need to complete April's entries (See 2nd half March post for reasons)
+- Longer article on CodeForces rating patterns, SpeedForces, and what rating actually means (separate post from biweekly updates)
 
 - Find a way to make some of the hyperlinks look nicer than just blue text?
 
