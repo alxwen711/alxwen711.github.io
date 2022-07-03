@@ -181,30 +181,32 @@ The first of these contests was [Round 778](https://codeforces.com/contest/1654)
 
 I also went in the contest immediately after this one, being [Round 779](https://codeforces.com/contest/1658). Given that 5 of the 7 last contests saw me effectively losing ELO, and that I was still in courseload hell (albleit I did have a short relief break of around 2 days during this time), my mentality going into this round was pretty bad, as I stated in my private journal on this day, _"Hopefully today’s contest is a start of the redemption arc."_. So it was a welcome suprise when I actually solved 3 of the 7 problems fast enough to actually gain 75 ELO, even if I'm still 133 points off my peak 2 months ago. More crucially, this was the first contest where I (technically) solved a D-level problem in a Division 2 contest, the problem being "[388535](https://codeforces.com/contest/1658/problem/D1)". Yes, it was the easy version, so I technically only solved D1 in this Division 2 contest, and I did completely miss Problem C, but the point is that this is still my first time actually solving a Problem D in a Division 2 contest. I will go into further details on the differences between each problem typically, but to summarize for this entry, on each Division 2 contest, there tends to be around 6 problems:
 
-- Problem A is usually a basic implementation or math problem that is intended to be solvable for everyone. As such, usually about 95% of participants are able to solve this problem.
+- Problem A is usually a basic implementation or math problem that is intended to be solvable for everyone. The majority (80%) of coders will solve this question as it can always be solved without any complicated algorithms or data structures.
 
-- Problem B tends to require more reasoning to figure out the solution, but is best thought of a "complex Problem A"; usually it is still basic implementation and knowledge of data structures other than arrays is usually not vital. The success rate of Problem B is more variable, but it is usually around 60-85%.
+- Problem B tends to require more reasoning to figure out the solution, but is best thought of a "complex Problem A"; usually it is still basic implementation and knowledge of data structures other than arrays is usually not vital. The success rate of Problem B is more variable, but it is usually around 65%.
 
-- Problem C is when basic data structure knowledge (trees, graphs, bitmasks) or basic techniques (dp, greedy, DFS) are needed, but only at a basic level. Furthermore, even here the main challenge could still just be implementing the solution. Problem C is where difficulty can be quite variable, as the success rate can be anywhere from 15-45%. The intended difficulty of Problem C is frequently related to the scoring scheme of the contest, more detailed analysis on this in a future post.
+- Problem C is when basic data structure knowledge (trees, graphs, bitmasks) or basic techniques (dp, greedy, DFS) are needed, but only at a basic level. Furthermore, even here the main challenge could still just be implementing the solution. Problem C is where difficulty can be quite variable, as the success rate can be anywhere from 16-48%. The intended difficulty of Problem C is frequently related to the scoring scheme of the contest, more detailed analysis on this in a future post.
 
-- Problem D is about the tipping point where the challenge in the questions pivot from implementing the solution to actually determining the solution. By this point, this is where a significant jump in difficulty tends to occur as even for the D1 Problem I solved in this contest, only about 18% of people also solved. Usually the success rate for Problem D is around 5-15%, and for every person who can solve A through C, maybe a third of them at best are solving Problem D as well.
+- Problem D is about the tipping point where the challenge in the questions pivot from implementing the solution to actually determining the solution. By this point, this is where a significant jump in difficulty tends to occur as even for the D1 Problem I solved in this contest, only about 18% of people also solved. Usually the success rate for Problem D is around 2.5-15%, and for every person who can solve A through C, maybe a third of them at best are solving Problem D as well.
 
 - Problem E is another significant difficulty jump, and I cannot accurately comment on what exactly is needed to be able to solve this consistently seeing that I have never solved a Problem E before. What I can say is that the success rate for E tends to be at most 3%, and only a few hundred people tops will solve E in a given contest.
 
-- By the logic above you can basically copy and paste what I said in the previous bullet point for Problem F, except that I have yet to see a contest where more than 100 people solve Problem F. Usually the solve count is under 30. Problems after this in a 2 hour contest tend to be rare, but usually Problem G,H, and so on have the same scenario as problem F.
+- By the logic above you can basically copy and paste what I said in the previous bullet point for Problem F, except that the most people I've seen solve F in a Division 2 contest is 40. Problems after this in a 2 hour contest tend to be rare, but usually Problem G,H, and so on have the same scenario as problem F.
 
 The few contests I took part in this month in all went relatively well, except for the one where I had about 4 hours of sleep, which is understandable. With the lack of any actual practice for these contests (mainly through practice contests and upsolving), I'm suprised I actually did decently well this month.
 
 The solve rates can be summed up in this table, with low solve rate being for a relatively hard problem and high solve rate being for a relatively easy problem:
 
-| Problem | Low Solve Rate | High Solve Rate |
-|---------|----------------|-----------------|
-| A       | 90%            | 99.5%           |
-| B       | 60%            | 85%             |   
-| C       | 15%            | 45%             |   
-| D       | 5%             | 15%             |   
-| E       | 0.25%          | 3%              |   
-| F+      | 0.01%          | 0.7%            | 
+| Problem | Low Solve Rate | Average Solve Rate | High Solve Rate |
+|---------|----------------|--------------------|-----------------|
+| A       | 80%            | 87%                | 95%             |
+| B       | 40%            | 64%                | 80%             |   
+| C       | 16%            | 32%                | 48%             |   
+| D       | 2.5%           | 8%                 | 15%             |   
+| E       | 0.3%           | 1.3%               | 3%              |   
+| F+      | 0.01%          | 0.09%              | 0.2%            | 
+
+*Editted July 3rd, 2022 to reflect clear rate percentages more accurately. These values are accurate to within 5-10% of their relative actual values.*
 
 I am completing this entry on May 10th, so I can't exactly say what I think about what will happen in the upcoming weeks in April, since that has already happened. For that I'll simply refer to [next month's post](/blog/Apr22).
 
