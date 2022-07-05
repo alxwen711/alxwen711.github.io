@@ -5,7 +5,11 @@ permalink: /blog
 
 [Back to home](https://alxwen711.github.io)
 
+[My CodeForces Progression](https://docs.google.com/spreadsheets/d/1aQObaGKSDEtilQrLuxFZ6-naW-EMjr4uTE5LnnNn6tY/edit?usp=sharing)
+
 ## 2022
+
+[July](https://alxwen711.github.io/blog/Jul22)
 
 [June](https://alxwen711.github.io/blog/Jun22)
 

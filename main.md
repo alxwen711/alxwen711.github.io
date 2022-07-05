@@ -1,8 +1,10 @@
+---
+layout: default
+permalink: /
+---
+
+
 ## alxwen711.github.io
-
-(this is the readme page, edit this with a manual of a blog template)
-
-
 Hello, and welcome to my Github Webpage.
 
 On this website I will be posting some of my coding projects as well as many other code related things. I might also write down some math stuff here as well. For now, since this site is using Jekyll to format everything and make sure that this page is not just a wall of HTML code, the sample text below is being kept here for reference. Once enough has been actually created on this website it will be removed.
