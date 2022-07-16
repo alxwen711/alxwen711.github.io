@@ -21,17 +21,17 @@ Performance: **1828**
 
 Unlike those past two contests I only managed to solve up to [Problem C](https://codeforces.com/contest/1699/problem/C). This was negated by the fact that this contest only had 5 problems. [This comment](https://codeforces.com/blog/entry/104316#comment-927069) best explains why 6 problem contests feel more “fair” than 5 problem contests, but tl;dr is that with only 5 problems, the difficulty curve going from the introductory A and B problems to the “endgame” last problem is steeper since there are only 2 questions to bridge this gap. This usually results in Problems C and D having much lower clear rates to accommodate for the hardest problem being at E instead of F, and this contest was no exception (C and D had 18.6% and 1.5% clear rates respectively). 
 
-This contest was a continuation off the consistency streak I’ve been recently on. If you look at the last 3 contests my performance ratings have been 1794, 1819, and 1828. It also marks my 10th contest in a row with at least a <span style=”color:cyan”>**Specialist**</span> level performance. It’s nice to finally be out of the whole choking habit I had earlier this year with these contests.
+This contest was a continuation off the consistency streak I’ve been recently on. If you look at the last 3 contests my performance ratings have been 1794, 1819, and 1828. It also marks my 10th contest in a row with at least a <span style="color:cyan">**Specialist**</span> level performance. It’s nice to finally be out of the whole choking habit I had earlier this year with these contests.
 
 ### [Educational Round 131](https://codeforces.com/contest/1701)
 
-Problems Solved: A, B ~~, C~~
+Problems Solved: A, B, ~~C~~
 
 New rating: **1639** (-101)
 
 Performance: **1328**
 
-*This contest was a continuation off the consistency streak I’ve been recently on. If you look at the last 3 contests my performance ratings have been 1794, 1819, and 1828. It also marks my 10th contest in a row with at least a <span style=”color:cyan”>**Specialist**</span> level performance. It’s nice to finally be out of the whole choking habit I had earlier this year with these contests.*
+*This contest was a continuation off the consistency streak I’ve been recently on. If you look at the last 3 contests my performance ratings have been 1794, 1819, and 1828. It also marks my 10th contest in a row with at least a <span style="color:cyan">**Specialist**</span> level performance. It’s nice to finally be out of the whole choking habit I had earlier this year with these contests.*
 
 So that previous paragraph lasted for a grand total of 4 days. This is only the second time I have lost over 100 ELO in a single contest, but this time, it doesn’t mentally hurt as badly as it did the first time. This is partially due to having done more contests since that first huge loss to the point that losing rating is something I’m more accustomed to, but it’s more because unlike the first time, where the loss was because of a trivial counting error, this loss came from a genuine error I can learn from.
 
