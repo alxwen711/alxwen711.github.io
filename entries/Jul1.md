@@ -53,7 +53,7 @@ Anyways, I’m writing this on the 15th, and I have Round 806 tomorrow. I’ll r
 
 So anyways,
 
-![SIX](docs/assets/images/CodeforcesSuperWeek.png)
+![SIX](docs/assets/images/6contests.png)
 
 No point in waiting anymore, here is the recap of the previous SIX contests, five of which took place in a 10 day span.
 
