@@ -70,8 +70,11 @@ My results on this contest felt similar to [Round 792](https://codeforces.com/co
 My performance in this contest has the following honours going for it:
 
 - Highest ranking ever in a contest (Ranked 251 out of 13633)
-- Highest ELO performance ever (2094, only 6 short of <span style=“color:orange”>**Master**</span> tier performance)
+
+- Highest ELO performance ever (2094, only 6 short of <span style="color:orange">**Master**</span> tier performance)
+
 - Fastest A through D solve (also first sub hour A through D solve)
+
 - Highest overall rating post contest ever (1768)
 
 This sort of performance may have been in part to all of the questions conveniently being around my stronger areas, but this was a great start to Super Week. Surely the following contests would see similar or at least comparable success right?
@@ -116,8 +119,9 @@ I don’t care that I lost rating. I did very well on this contest. [Problem A](
 
 Problem D is the sole reason why I’m proud of how I did in this contest. The easy part is determining if the robot can reach the finish cell or not. There are only 2 ways a robot that travels k tiles at a time in a single direction cannot reach the finish cell:
 
-The horizontal distance or vertical distance between the start and finish is not a multiple of k
-There exists a column between the start and finish that the robot cannot pass through due to having too many cells blocked off.
+1. The horizontal distance or vertical distance between the start and finish is not a multiple of k
+
+2. There exists a column between the start and finish that the robot cannot pass through due to having too many cells blocked off.
 
 The second condition is a bit trickier, but the simplest way to calculate this is to find the maximum number of cells blocked in a column in between the start and finish values which involves finding the maximum in a subarray. Checking if the robot can pass through the maximally blocked column is done by finding how far upwards can the robot move. This means that the only part left unsolved in this question is finding the maximum of a subarray, which happens to be the hard part of the question.
 
@@ -167,6 +171,6 @@ Please excuse me as I lord over the fact that 650th place earned me about 2 doll
 
 Using this score metric, we can make an important revelation: No matter how many times Operation 1 is used on an array, its score will remain the same, whereas every time Operation 2 is used, the array’s score increases by 1. Thus if we calculate the score for each array given, one will have a score x higher than the rest to represent the x times Operation 2 was used on it.
 
-I wouldn’t say this was the hardest problem I’ve ever solved, but the overall success on the other three problems helped to make this my first ever <span style=“color:orange”>**Master**</span> level performance. Combine this with smashing my previous all time overall ELO high by nearly 100 points, and I’m now within actual striking range of reaching <span style=“color:purple”>**Candidate Master**</span> (1900 ELO) in my next contest. [I’ve graphed out the relationship between ELO change and ELO difference from expected performance after each contest here](https://www.desmos.com/calculator/1uzr6qbblz), and I estimate that if I perform at minimum a 1997 ELO level in my next contest, I will be eligible for some Division 1 contests. To further help me on this endeavour that will begin on August 4th with Educational Round 133, I have begun a [Python repository for competitive programming](https://github.com/alxwen711/py-competitive-library). It’s a WIP project intended to provide useful templates for algorithms, data structures, and other useful files for competitive programming in Python. After all, the main objective of this blog is to log my Codeforces progression since the start of this year, and to show that Python is actually viable in competitive programming.
+I wouldn’t say this was the hardest problem I’ve ever solved, but the overall success on the other three problems helped to make this my first ever <span style="color:orange">**Master**</span> level performance. Combine this with smashing my previous all time overall ELO high by nearly 100 points, and I’m now within actual striking range of reaching <span style="color:purple">**Candidate Master**</span> (1900 ELO) in my next contest. [I’ve graphed out the relationship between ELO change and ELO difference from expected performance after each contest here](https://www.desmos.com/calculator/1uzr6qbblz), and I estimate that if I perform at minimum a 1997 ELO level in my next contest, I will be eligible for some Division 1 contests. To further help me on this endeavour that will begin on August 4th with Educational Round 133, I have begun a [Python repository for competitive programming](https://github.com/alxwen711/py-competitive-library). It’s a WIP project intended to provide useful templates for algorithms, data structures, and other useful files for competitive programming in Python. After all, the main objective of this blog is to log my Codeforces progression since the start of this year, and to show that Python is actually viable in competitive programming.
 
 
