@@ -13,16 +13,14 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [Blog/journal](https://alxwen711.github.io/blog)
 
-[Latest post](https://alxwen711.github.io/blog/Jun22)
+[Latest post](https://alxwen711.github.io/blog/Jul22)
 
 ### Todo list
 (Highlighted are top priority)
 
 - Longer article on CodeForces rating patterns, SpeedForces, and what rating actually means (separate post from biweekly updates)
 
-- Find a way to make some of the hyperlinks look nicer than just blue text?
-
-- Refactor Python Prime Code: Pretty much clean up the code from an earlier project so that it is much less spagetti formed and create a UI for interaction
+- [**Python Competitive Library**](https://github.com/alxwen711/py-competitive-library): Updates are happening to this repository on a regular basis with new algorithm/data structure/template files
 
 - Bidding Tic-Tac-Toe Java game: This is mainly to house the AI I made for this on the Hackerrank problem
 
