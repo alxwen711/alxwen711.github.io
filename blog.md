@@ -7,6 +7,10 @@ permalink: /blog
 
 [My CodeForces Progression](https://docs.google.com/spreadsheets/d/1aQObaGKSDEtilQrLuxFZ6-naW-EMjr4uTE5LnnNn6tY/edit?usp=sharing)
 
+[1 Year of CodeForces in Review](https://alxwen711.github.io/blog/2022)
+
+[CodeForces Rating System Explained](https://alxwen711.github.io/blog/CFRating)
+
 ## 2022
 
 ### [August](https://alxwen711.github.io/blog/Aug22)
