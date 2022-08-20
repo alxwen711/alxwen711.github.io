@@ -4,10 +4,9 @@ permalink: /
 ---
 
 
-## alxwen711.github.io
-Hello, and welcome to my Github Webpage.
+# alxwen711.github.io
+Hello, and welcome to my Github Webpage. Here I write about mostly coding related topics. Currently this entails what I've done on CodeForces over the year, but future posts may also include recaps of my progress on other projects located on my Github. Check the Todo list for what my current plans are.
 
-On this website I will be posting some of my coding projects as well as many other code related things. I might also write down some math stuff here as well. For now, since this site is using Jekyll to format everything and make sure that this page is not just a wall of HTML code, the sample text below is being kept here for reference. Once enough has been actually created on this website it will be removed.
 
 [About me](https://alxwen711.github.io/about)
 
@@ -15,18 +14,18 @@ On this website I will be posting some of my coding projects as well as many oth
 
 [Latest post](https://alxwen711.github.io/blog/Aug22)
 
-### Todo list
+## Todo list
 (Highlighted are top priority)
 
-- Longer article on CodeForces rating patterns, SpeedForces, and what rating actually means (separate post from biweekly updates)
+- **Longer article about CodeForces' rating system, SpeedForces, and what rating actually means**. This will be a separate post from biweekly updates. Another post is also planned as a full review of my first year on CodeForces.
 
-- [**Python Competitive Library**](https://github.com/alxwen711/py-competitive-library): Updates are happening to this repository on a regular basis with new algorithm/data structure/template files
+- [**Python Competitive Library**](https://github.com/alxwen711/py-competitive-library): Updates are happening to this repository on a regular basis with new algorithm/data structure/template files.
 
-- Bidding Tic-Tac-Toe Java game: This is mainly to house the AI I made for this on the Hackerrank problem
+- [Bidding Java game](https://github.com/alxwen711/biddingGame): This is mainly to house an AI I am making for this on the Hackerrank problem, still heavily WIP
 
-- **About me page**: Goal is to have a more fleshed out about me page, right now there isn't much there
+- About me page: Goal is to have a more fleshed out about me page, right now there isn't much there
 
-### Contacts
+## Contacts
 
 Gmail: alxwen711@gmail.com
 
