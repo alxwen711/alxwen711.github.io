@@ -3,6 +3,8 @@ layout: default
 permalink: /blog/Jul22
 ---
 
+[Link back to all posts](https://alxwen711.github.io/blog)
+
 ## July 1st-14th
 
 I’m marking off this first half a day early because next week is a contest fest. 

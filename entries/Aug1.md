@@ -3,6 +3,8 @@ layout: default
 permalink: /blog/Aug22
 ---
 
+[Link back to all posts](https://alxwen711.github.io/blog)
+
 ## August 1st-15th
 
 After last post’s 6 contest ficaso, and recent personal entries taking 9 eternities to complete, I’m now trying to write this post faster than normal. This is so that I force myself not to ramble endlessly in these logs and in upcoming weeks my school schedule means I will not have as much time to write these posts. Hopefully I can still go into reasonable depth in my contest recaps, speaking of, there are three here:
