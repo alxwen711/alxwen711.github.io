@@ -66,5 +66,37 @@ Pain. In my last 10 contests, I have dropped ELO 6 times. Half of those times we
 It is true there are still 4.5 months left for me to reach <span style="color:purple">**Candidate Master**</span> this year. My original goal was <span style="color:blue">**Expert**</span> but was changed due to me reaching this back in April. The real issue is the upcoming school term. In earlier logs I mentioned I was seeking co-op, but these plans changed, mainly because there were many courses I could take this term that I have been waiting for months to get, and in all honesty, I did not feel ready for co-op. The Fall 2022 academic schedule, which will contain 6 courses, is my own decision. Combined with external projects I’m planning to post on my Github, I will not have the luxury of being able to attend every CodeForces contest scheduled. In September to December, there may be 10 contests that fit in my schedule if I’m lucky; any other contests will be the result of suboptimal circumstances. So the next three contests are vital, as they will be my best chances to attain <span style="color:purple">**Candidate Master**</span> this year.
 
 
-## July 16th-30th
+## August 16th-31st
+
+These two weeks effectively act as Judgement Day. Routine competitive practice will be impossible after this with a course load that is just a “bit” difficult, so these next contests are crucial as to if I’ve attained <span style="color:purple">**Candidate Master**</span>, placed myself in very close striking range for the few contests I have left this year, or killed off any chance of reaching this goal with untimely collapses. 
+### [Round 814](https://codeforces.com/contest/1719)
+
+Problems Solved: A, B, C, D1, D2, E
+
+New Rating: **1981** (+147)
+
+Performance: **2363**
+
+![I got the miku rank lol](docs/assets/images/39.png)
+
+
+Holy hell I did it. The only “downside” from this contest was that I was not able to participate in Rounds 815 and 816 due to oversleeping for both of them, but screw that. I’ve reached <span style="color:purple">**Candidate Master**</span> in 8 months! Bring out the champagne!
+
+![YEAAAAAAAA](docs/assets/images/champagne.gif)
+
+So how exactly did this happen? Problems A and B were pretty easy, and I figured out the only trick in [Problem C](https://codeforces.com/contest/1719/problem/C) being that once the strongest player is in the match, they’ll win all of the remaining fights, so only the fights up to that one have to be calculated. [Problem D](https://codeforces.com/contest/1719/problem/D1) was a harder problem where I made several greedy attempts that failed first, but unlike previous contests where I would make small tweaks each time hoping that I on the right idea, I made several attempts with significant changes each time, even trying a dp idea in one attempt ([Submission History](https://codeforces.com/contest/1719/status)). The I found for solution for D can actually be summarised in one sentence:
+
+<details> 
+<summary>Problem D solution </summary> 
+`Minimum time = Array length - maximum number of subarrays that can be created out of array where xor of all the elements is 0` 
+</details>
+
+The only difference between D1 and D2 is runtime constraints, D1 can allow O(n^2) while D2 needs at least O(n log n). My implementation runs in O(n) time, and in fairness, this extra constraint did not really affect the problem much, as the rating difference between the easy and hard versions was only 100 ELO.
+
+The true breakout that led to an <span style="color:orange">**International Master**<\span> level performance was in [Problem E](https://codeforces.com/contest/1719/problem/E). In this case, the problem is solvable via greedy method, so all that is required to check is if the letter count matches the sum of the first x Fibonacci numbers, and then to assign each Fibonacci number from highest to lowest to the highest value remaining without repeating letters twice. I did not expect to solve this question in 15 minutes, and to be honest, it was easier for me compared to D, but it is my first ever E solve in a Division 2 contest. This question also happened to be only Problem B in Division 1 (usually it would be C), so that may explain how I somehow got this question so fast.
+
+![last 8 months](docs/assets/images/JanAug.png)
+
+Each point on this graph represents a contest in the last 8 months, with the first 5 contests being excluded since my rating there was provisional. From being on the 1400 ELO borderline between <span style="color:green">**Pupil**<\span> and <span style="color:cyan">**Specialist**<\span> in February and March, to climbing and maintaining <span style="color:blue">**Expert**<\span> in May and June, to now reaching <span style="color:purple">**Candidate Master**<\span> is a nice climb. The journey however is still not over yet, as technically, I’m still a candidate. Being an actual “master” of competitive programming at 2100 ELO would be fun. I’m unsure if I can reach that by the end of this year with my upcoming school term limiting the quantity of contests I can partake in, but I sure as hell will try. Also, I’m working on two special posts to be up (eventually) reflecting my first year on CodeForces and what each rating in CodeForces means, 2022 edition.
+
 
