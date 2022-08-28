@@ -101,4 +101,37 @@ The true breakout that led to an <span style="color:orange">**International Mast
 
 Each point on this graph represents a contest in the last 8 months, with the first 5 contests being excluded since my rating there was provisional. From being on the 1400 ELO borderline between <span style="color:green">**Pupil**<\span> and <span style="color:cyan">**Specialist**<\span> in February and March, to climbing and maintaining <span style="color:blue">**Expert**<\span> in May and June, to now reaching <span style="color:purple">**Candidate Master**<\span> is a nice climb. The journey however is still not over yet, as technically, I’m still a candidate. Being an actual “master” of competitive programming at 2100 ELO would be fun. I’m unsure if I can reach that by the end of this year with my upcoming school term limiting the quantity of contests I can partake in, but I sure as hell will try. Also, I’m working on two special posts to be up (eventually) reflecting my first year on CodeForces and what each rating in CodeForces means, 2022 edition.
 
+### August 28th update:
+
+Well it turns out there’s another contest announced for this month. Might as well participate in that one. How did that turn out?
+
+### [Educational Round 134](https://codeforces.com/contest/1721)
+
+Problems Solved: A, B, C
+
+New Rating: **1883** (-98)
+
+Performance: **1562**
+
+[Pain.](https://www.youtube.com/watch?v=kKW2IxrOuh4)
+
+To put the above in a more optimistic viewpoint, the fact that a performance that would be considered decent for my rating back in February is now losing me nearly 100 ELO shows how much I’ve improved in the last 8 months. It still doesn’t excuse that in this contest, I was a mess. [Problem D](https://codeforces.com/contest/1721/problem/D) I figured out the solution. Oversimplified, for D you first find what bits can be 1 after the AND statement, and then try to build the answer from most to least significant bit. The issue is with sets like `a = [1,0,0,3,3] , b = [2,3,2,1,0]`, the bits with value 1 and 2 can both be set to 1 after the AND statement, but not simultaneously. I compare this part with the following problem.
+
+```
+There are n keys and n doors. You are given m statements.
+Each statement consists of x keys and x doors, x <= n.
+The x keys given unlock the x doors, but you do not know
+which key links to which door specifically.
+Determine if all the statements can be true simultaneously.
+``` 
+
+If I could find a solution to the above problem, then I solve Problem D. There’s probably some really simple solution I’m missing here, and from the first half of the tutorial for this question, I have the same solution up to this point. Alas, being close on a problem does not give partial credit.
+
+I’m not even mad over Problem D though. Had I avoided the 2 incorrect submissions I submitted for problems [B](https://codeforces.com/contest/1721/problem/B) and [C](https://codeforces.com/contest/1721/problem/C) each, I would have placed 1323rd with a penalty of 67, a performance of about 1690 ELO, and only losing about 70 ELO, keeping me in <span style="color:purple">**Candidate Master**<\span>. Instead I proceed to be an absolute clown and completely forget about obvious test cases which unsurprisingly, results in additional penalties. Problem B was a glorified yes/no question where you needed to track which “walls” the laser touched to determine if a path existed. For my first submission, I said that a path did not exist only if the right and bottom walls were touched. In the below diagram, I initially thought only the left most scenario could lead to no paths.
+
+![clown moment](docs/assets/images/eduB.png)
+
+Problem C is not much better. I got the first submission wrong, which sure, it happens. So why am I submitting again 5 minutes later with only a single line edit?? The program failed on pretest 2, so I should be relooking at the entire algorithm, not thinking there is some edge case breaking everything. A fail on pretest 2 either means something in your algorithm is wrong, or you made a [blatantly idiotic error](https://alxwen711.github.io/blog/Feb22). The one line edit I made didn’t even affect the program at all so the second submission was just me handicapping myself with more unnecessary penalties. The third submission finally worked, which only took 26 minutes after the previous one. I have finished Problems A to C in that time before. 
+
+I guess you could say that at least I didn’t mind block C completely to the point of not solving it at all but for where I am right now, that is the bare minimum of what is expected. I’m not sure what the hell happened to my early question consistency in this contest. At least I still have one more chance on September 2nd to return to <span style="color:purple">**Candidate Master**<\span> before school starts again.
 
