@@ -17,7 +17,7 @@ Hello, and welcome to my Github Webpage. Here I write about mostly coding relate
 ## Todo list
 (Highlighted are top priority)
 
-- **Longer article about CodeForces' rating system, SpeedForces, and what rating actually means**. This will be a separate post from biweekly updates. Another post is also planned as a full review of my first year on CodeForces.
+- **Two seperate posts from biweekly updates**. These are planned to be longer more in depth posts. The first is on how Codeforce rating works and what it actually means (mainly for setting personal goals) and is expected to be out by the end of September. The second will be a full review of my first year on CodeForces and obviously releases late December, assuming that I am physically capable of this after my wisdom teeth get pulled out.
 
 - [**Python Competitive Library**](https://github.com/alxwen711/py-competitive-library): Updates are happening to this repository on a regular basis with new algorithm/data structure/template files.
 

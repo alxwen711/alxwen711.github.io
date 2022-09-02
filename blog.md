@@ -13,6 +13,8 @@ permalink: /blog
 
 ## 2022
 
+### [September](https://alxwen711.github.io/blog/Sep22)
+
 ### [August](https://alxwen711.github.io/blog/Aug22)
 
 ### [July](https://alxwen711.github.io/blog/Jul22)
