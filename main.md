@@ -12,7 +12,7 @@ Hello, and welcome to my Github Webpage. Here I write about mostly coding relate
 
 [Blog/journal](https://alxwen711.github.io/blog)
 
-[Latest post](https://alxwen711.github.io/blog/Aug22)
+[Latest post](https://alxwen711.github.io/blog/Sep22)
 
 ## Todo list
 (Highlighted are top priority)
