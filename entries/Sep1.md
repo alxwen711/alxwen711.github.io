@@ -79,6 +79,60 @@ With C being a lucky solve, D being a graph problem, and E requiring a technique
 
 This blog was posted a week early, mainly due to the fact that there are no more contests coming in this two week period. I am starting classes at SFU again, 6 in fact. You can still expect frequent activity on other Github projects I’m working on as well as the rating post sometime at the end of this month. Alas, my goal of returning to CM by the end of this year is significantly harder now due to fewer contests and having much less time than normal to prepare. 
 
+### September 8th update
+
+Well, it turns out I’m incompetent when it comes to reading CodeForces schedule, because it turns out there was a contest today. Even better, my classes start later on Thursdays so I conveniently was able to attend today’s round. Let’s see how it went.
+
+### [Educational Round 135](https://codeforces.com/contest/1726)
+
+Problems Solved: A, B, ~~C,~~ D
+
+New Rating: **1808** (-72)
+
+Performance: **1585**
+
+On second thought, I’d say it’s just best to end this entry here.
+
+Okay fine, I’ll explain what happened. The contest opened with a strong Problem A-C solve in 30 minutes that had no major errors. Yes, there is a massive issue I’m ignoring here, we’ll discuss that, but first let me how I did [Problem D](https://codeforces.com/contest/1728/problem/D). I approached this question perfectly.
+
+The first thing I noticed is that the input size is much smaller than normal; the number of characters *s* will be at most 2000. 2000^2 is only 4 million, so an O(n^2) will actually be fast enough. O(n^2) is special because it means that a dp approach is more likely since 2d array representation usually won’t timeout. That said, I tried finding a greedy option first that involved trying to pick the best move for each player in a game. I soon realised that most of my greedy attempts were incredibly scuffed, and that a game with a 2 character string is trivial: if both characters are the same, the game is a draw, else Alice wins. From there, a dp approach can be used to calculate the result for 4-char substrings, 6-char substrings, and so on.
+
+Using an example, consider the string `abbcca`. The algorithm determines that `ab`,`bc`, and `ca` are wins for Alice, while `bb` and `cc` are draws. This info is represented in the array `[1,0,1,0,1]`, where 1 = Alice and 0 = Draw. Now consider the 4 character strings. The first one is `abbc`, and only the middle 2-char substring `bb` is a draw. However `abbc` is not a draw because even though Bob can force `bb` to be the remaining string, Alice could choose the `a` from earlier to finish with a string of `ba` to Bob’s `bc`. Thus `abbc` = 1. `bbcc` however is a draw because if Alice chooses b, Bob copies to get to `cc`, and if Alice chooses c, Bob copies to get to `bb`; both of these scenarios play out in a draw. For `bcca`, similar logic to `abbc` applies to show this is a win for Alice. This info is stored as `[1,0,1]`
+
+This leaves the main string `abbcca`. Note that Alice choosing from the left leaves either a draw or win [0,1], and choosing from the right leaves either a win or draw [1,0]. Since the middle 4 characters lead to a draw, and the end characters are equal, the entire string is a draw. The array notation I used to track this data also helps in simplifying the logic for the program.
+
+Thus concludes my Problem D approach. I even had the right idea for [Problem E](https://codeforces.com/contest/1728/problem/E). You can find the maximum value for using x red peppers and n-x black peppers by first tracking the difference in tastiness between the two for each dish. Then find the total tastiness when using n red peppers, and then swap in black peppers from most to least effective to get the best result for every combination. This part can be done in O(n log n), and each shop query is likely solvable in O(log n) time each by using Euclid’s algorithm to solve each Diophantine equation. Unfortunately, I was running short on time to implement this part, and resorted to a brute force to attempt a hail mary solve. The submission made it past 6 test cases before TLE occurred, so it’s safe to assume I had the right approach.
+
+And then there’s [Problem C](https://codeforces.com/contest/1728/problem/C). Had I not been hacked, my submission would have fully passed the test cases, I would have gained about 30 ELO, and I’d be writing this contest as a storybook ending where I finally return to CM again. [I even resubmitted the original solution to confirm this](https://codeforces.com/contest/1728/submission/171539249). Alas, I’m now 92 ELO out of CM, and only a miracle can really get me back there before this year ends. (I’d need another Master level performance to make it back, or several CM performances. Both are longshots at best right now.) The cause of this successful hack is due to how Python hashmaps work. Hashmaps are incredibly useful for key value pairs by using additional memory for O(1) lookups. However, this is only possible if the hash function maps keys to the hashmap’s memory in a relatively even distribution. For most datasets this isn’t a problem, but specific key values will cause many hash collisions, which tl;dr, makes the lookup go from O(1) to a worst case O(n). This can make a program slow down to O(n^2), but this is incredibly unlikely for random number sequences. In fact, you’d need a key sequence intentionally designed in a way that makes the hash function map keys all map to the same value to cause an O(n) blowup.
+
+You can probably tell what happened. It turns out the hash function for Python is simple enough that the following code can generate an array of values that can cause such a blowup:
+
+```python
+def screwpythonhashtables():
+    arr = []
+    mask = (1 << 17) - 1
+    fill = int((1 << 15) * 1.3 + 1)
+
+    arr = []
+    # arr = [1]*199998
+    arr += [mask + 2] * 2
+    x = 6
+    for i in range(1, fill):
+        arr += [x] + [x]
+        x = x * 5 + 1
+        x = x & mask
+
+    arr += [1] * (n - len(arr))
+```  
+
+For future contests a possible solution is to run all values used for a hashmap in a self made hash function to generate a more even distribution of values. I’m currently working on such a solution to be added to the Python comp lib, partially because it’s important, and partially because I’m still hurting over this contest. Also, such hashmap hacks also exist in C++, so programming language was never the issue. With school already loading up work on me at a rapid pace, I’ll be lucky if I have the time to join CodeForces contests consistently in these next 4 months, let alone have actual practice time. And to think that a hashmap exploit, the last thing on my mind immediately after that contest, would be why I’m sad now. I think this past excerpt from August is fitting here:
+*Oh, and I haven’t even mentioned this yet:*
+
+![hahahahahahahahaha.](docs/assets/images/hackdefence.png)
+
+*As if the near TLE shenanigans weren’t enough for my blood pressure, a total of ****16**** attempts from 5 different people were made to break my solution. AND my solution defended all of them successfully. Just about every attempt made was to try and make my solution exceed the time limit, and the closest any of them got was about 882ms. If anyone who tried hacking my solution is reading this, then to you specifically, thank you for trying to hack me, defending all of the hacking attempts actually felt good.*
+
+The inverse really is true. Defending a hack makes you feel amazing, while being hacked is about the worst feeling imaginable on CodeForces. As a final note, please do not search or harass the person who hacked me; hacking on CodeForces is an innovative and fair aspect of the contests. If you do hack someone, you deserve the reward of increasing your own rank in the contest, and if you are hacked, then your solution failed a legitimate test case within the constraints of the problem and doesn’t deserve to be correct. That said, this sort of pain is nothing like the rage I felt over Round 818. It’s more of an agonising sadness that tears at you, like finally qualifying for a national sports competition two weeks away, only to get in a car crash hospitalising you long term. It is hyperbole, but unfortunately, it’s been two days since that contest as of writing this, and I don’t think I’ll forget this moment anytime soon.
 
 ## September 16th-30th
 
