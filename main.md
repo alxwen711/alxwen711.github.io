@@ -17,11 +17,11 @@ Hello, and welcome to my Github Webpage. Here I write about mostly coding relate
 ## Todo list
 (Highlighted are top priority)
 
-- **Two seperate posts from biweekly updates**. These are planned to be longer more in depth posts. The first is on how Codeforce rating works and what it actually means (mainly for setting personal goals) and is expected to be out by the end of September. The second will be a full review of my first year on CodeForces and obviously releases late December, assuming that I am physically capable of this after my wisdom teeth get pulled out.
-
 - [**Python Competitive Library**](https://github.com/alxwen711/py-competitive-library): Updates are happening to this repository on a regular basis with new algorithm/data structure/template files.
 
 - [Bidding Java game](https://github.com/alxwen711/biddingGame): This is mainly to house an AI I am making for this on the Hackerrank problem, still heavily WIP
+
+- End of year recap post: Will also be posted to CodeForces. This doubles as a how to get to Expert post. (It's meant to be a how to reach CM post but with how September went there's unsuprisingly a change of plans.)
 
 - About me page: Goal is to have a more fleshed out about me page, right now there isn't much there
 
