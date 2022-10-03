@@ -136,3 +136,117 @@ The inverse really is true. Defending a hack makes you feel amazing, while being
 
 ## September 16th-30th
 
+### [Round 821](https://www.youtube.com/watch?v=-iOzHoxsor4)
+
+Problems Solved: B, D1, A, C
+
+New Rating: **1758** (-50)
+
+Performance: **1606**
+
+([Actual contest link](https://codeforces.com/contest/1733))
+
+The link above summarises my thoughts on this contest: a clown show. Excuse my language for a moment, but it needs to be asked: 
+
+*what in the actual hell was that.*
+
+In a contest where I was expected to begin a recovery after losing rating in 3 consecutive agonising contest failures, I proceeded to have such a ridiculous contest that this blog entry is the only way I can explain that I was not trolling. The ordering of the problems solved is intentional; I really solved [Problem D1](https://codeforces.com/contest/1733/problem/D1) before [Problem A](https://codeforces.com/contest/1733/problem/A). I’ll ignore the fact that the amount of time I spent thinking on how to solve A is about the same amount of time for bamboo to have a visible growth spurt since fixating on solving A first would’ve made this contest even more of a dumpster fire but there were still MANY execution mistakes in this contest.
+
+[Problem B](https://codeforces.com/contest/1733/problem/B)’s first submission was inaccurate as all hell. I somehow thought its output for a test case like `7 1 2` was correct because I forgot some competitors would have no wins.
+Not much was really wrong with [Problem C](https://codeforces.com/contest/1733/problem/C) except for the fact that I kept overcomplicating the potential solution; it took an agonising amount of time for me to notice the very easy method of making the entire array the same value.
+Choosing to try and solve [E](https://codeforces.com/contest/1733/problem/E) instead of [D2](https://codeforces.com/contest/1733/problem/D2). D2 ended up having 522 solves while E had 18 solves. E was worth much more in points but this was essentially a Hail Mary sort of attempt.
+The above choice only makes sense if I was absolutely sure that I had no idea how to progress for D2. Thing is that D2 had a giveaway clue in the constraints being `n <= 5000`. I should’ve realised this meant a O(n^2) solution could work, meaning dp could be a legit idea. Unsurprisingly, there is a dp solution for D2. 
+
+In total there were at least 3 significant errors that cost me in this contest. Even if I did not solve D2 the points lost from burning time on overcomplicating the answers and an idiotic B attempt would have at least prevented yet another 50 ELO loss. I may have been overrated when I first reached CM, but this is now four rated contests in a row where I have lost rating, 3 of which being significant losses. I’m 220 points off of my peak and 142 out from CM. At this point this is less of a knowledge issue, right now I need to regroup myself and stop crapping the bed on questions I should be solving efficiently.
+
+And it’s not like I’m not capable of having a strong contest. Look at this practice contest for [Round 820 (Div 3)](https://codeforces.com/contest/1729/standings/participant/140177174#p140177174). 6 out of 7 correct with E and F being 1800 and 1900 rated problems respectively. This would’ve been good for 42nd in the live contest for a performance rating of around 2204. This may be clearly overrated but E and F are easily Div 2 D-level problems. I clearly have the capability of doing better than these choke jobs, so to see myself struggling on Problem fricking A is just, how??? I swear if the contest on September 25th ends up being a shitshow I am going to lose it.
+
+### [Round 822](https://codeforces.com/contest/1734)
+
+Problems Solved: A, B, C, D
+
+New Rating: **1770** (+11)
+
+Performance: **1793**
+
+Well this is a surprise. I wasn’t even supposed to be in this contest, but due to incredible luck, this contest was 2.5 hours earlier than normal to avoid a scheduling conflict with a contest on CodeChef. Sure, this contest is happening at 5am in my local time, but [past](https://codeforces.com/contest/1642/standings/participant/128907106#p128907106) [experiences](https://codingcompetitions.withgoogle.com/codejam/submissions/0000000000877b42/0000000000a52684) make this endurable.
+
+Sure, [Problem C](https://codeforces.com/contest/1734/problem/C) was a bit of a mess with it taking 41 minutes due to logic errors in my solution, and the contest as a whole had problems with significantly higher clear rates than normal, but for once, I completed an A-D solve without major issues. My Round 818 performance may be statistically better, but for once, I am recapping a contest where I don’t end up writing an essay ranting on all the blunders I made. [Problem D](https://codeforces.com/contest/1734/problem/D) in particular was surprisingly well done with myself finding the idea of using a “back-and-forth path” solution quickly, and it was the main reason I ended up with a positive rating gain since the contest I reached CM. The contest may not have been perfect, but this pretty much sums up my thoughts on it (the image below was made right after the contest, rating changes can slightly fluctuate a few days after the contest):
+
+![yea](docs/assets/images/slide.png)
+
+Hopefully I can continue this momentum into this Sunday’s contest.
+
+### [Round 823](https://codeforces.com/contest/1734)
+
+Problems Solved: A, ~~B~~, C
+
+New Rating: **1709** (-61)
+
+Performance: **1535**
+
+![oof](docs/assets/images/systemFail.png)
+
+To myself, conglaturations. I was considering making the recap of this contest and several of the other disasters into its own post portraying reaching CM as an ironic “curse”, but there was a chance that it could’ve been quickly outdated since Educational Round 136 and Global Round 22 happen this Thursday and Friday respectively. Had I got [Problem B](https://codeforces.com/contest/1730/problem/B), this would’ve been a peaceful recap where the main focus is myself making the questionable decision to attempt a [Problem E](https://codeforces.com/contest/1730/problem/E) with only 5 solves instead of [Problem D](https://codeforces.com/contest/1730/problem/D) with 286 solves. In fairness, I did have more of an idea on how to start E, and I actually succeeded in creating a logically sound solution; I just incorrectly estimated its runtime to be O(n log n) when it was actually O(n^1.71). 
+
+Now, Problem B. After the contest (and an undisclosed amount of time in the first four stages of grief), I tried figuring out how everything went to pot by recording my analysis of the failed submissions in a semi-structured rant on Discord. The [first attempt](https://codeforces.com/contest/1730/submission/173450078) was me trying to get the absolute error under 10^-6. I decided to be safe by aiming for an abs error under 10^-8, but this caused a TLE for the following reason:
+
+![L](docs/assets/images/1730B/a.png) 
+
+To prevent a TLE in [Attempt 2](https://codeforces.com/contest/1730/submission/173452108), I forced the binary search to do a specific number of iterations. I tried 20 first, since (1/2)^20 is about 10^(-6) and taking the middle of the two values would likely get me within the relative error of 10^(-6). I knew this had a chance of failure due to it being very borderline, so when it did, I adjusted to 25 iterations, and it passed pretests.
+
+We all know what happened after that. You may also have noticed I completely misunderstood the meaning of relative error:
+
+![L again](docs/assets/images/1730B/b.png)
+
+My overall reaction after this contest: [Do I even have to say it?](https://www.youtube.com/watch?v=kKW2IxrOuh4)
+
+I’m now 272 ELO below my all time peak. The only other time I was over 200 points below my peak was after the “I can’t count to five” contest. Even still, there is no reason for me to quit now. At this point, any contest performance that isn’t an implosion will help in bringing me back up, and even though the previous contests have been trainwrecks, I have still shown I’m capable of doing well. Round 822 went smoothly even though it was at 5am. I still got 4 problems correct in 3 of my last 6 contests, and had I not been hacked, I’d even have made it back to CM after e134. Mean regression is cruel, but at this point, I’m likely below my mean. I may be stuck in this hole, but only an idiot would wallow in self pity instead of finding a way to get out.
+
+
+### [Educational Round 135](https://codeforces.com/contest/1739/)
+
+Problems Solved: A, B, C
+
+New Rating: **1738** (+29)
+
+Performance: **1817**
+
+I had a suboptimal initial approach for [Problem C](https://codeforces.com/contest/1739/problem/C), mainly because I really thought I could just OEIS the sequences. I should not be using this as my first approach since it’s pretty much me “hoping” for the sequence to have been created before. Relying on “hope” strategies is usually an easy way to fail since most of the time it’s equal to trying to “cheese” a solution. It could work, but in practice it usually doesn’t. At least I figured out the formula in C using a dp like method. The low constraint for n also means no fancy factorial methods are needed.
+
+From there most of the time I tried to solve [Problem D](https://codeforces.com/contest/1739/problem/D). The first 20 of about 80 minutes were burnt on [Problem E](https://codeforces.com/contest/1739/problem/E) since I looked at D, saw it was a tree problem, then quickly assumed E was easier. Turns out that I’m actually decent at tree problems now since I ended up having more progress on D. I properly determined how many nodes are on each level of the tree. Where I got stuck was figuring out which layers to cut, for which I tried to create a dp like idea for, but ran out of time. Even if it was implemented properly I’d probably need a sparse table to get the needed O(1) lookup times for a O(n log n) solution. Still, this was a pretty difficult problem, and I did get A and B very quickly to place myself in the top 1000. Now I just hope [Problem B](https://codeforces.com/contest/1739/problem/C) didn’t get hacked because as of writing this, there have been so many hacks for B that for a short time, the CodeForces website literally went down. I’m writing this 100 minutes after the contest and the solve rate for B is still collapsing. 
+
+### [Global Round 22](https://codeforces.com/contest/1738)
+
+Problems Solved: A, B, C, D
+
+New Rating: **1809** (+71)
+
+Performance: **2009**
+
+Anytime I complete a full A through D solve on a contest is usually a good sign, and this was no exception. The only questionable play was [Problem B](https://codeforces.com/contest/1738/problem/B) where solutions kept screwing up because I forgot about the n = 1 edge case. Everything else though was done relatively well. [Problem C](https://codeforces.com/contest/1738/problem/C) is a simple game logic puzzle that went about as perfectly as possible. Implementation is not really a challenge for C, but it mainly determines who wins given a current game state.
+
+<details>
+<summary>Problem C Important Observation</summary>
+
+The only thing that matters about the values are if they’re even or odd, which means the solution is reliant on how many even/odd values there are at the starting state. Let x = # of even vals and y = # of odd vals. 
+
+With some basic game simulation you can find that the game result can vary depending on if x is odd or even and on what the value of y % 4 is. This gives 8 possible game states that can have the winner determined manually.
+</details>
+
+[Problem D](https://codeforces.com/contest/1738/problem/D) was pretty ugly with how long it took and 2 wrong submissions, but I did solve it. 
+
+<details>
+<summary>Thoughts on Problem D’s solution</summary>
+
+This problem actually has two independent parts, being to determine what the k value is, and what the original array is. I figured the original array surprisingly easily and my wrong submissions actually came from the wrong k value. The array building method somewhat resembles a DFS except out of each layer only one of the nodes can have children, thus every value will be added in the array. 
+
+Funny how this is technically a “tree” problem and I yet again solve it without even thinking of it as a tree.
+</details>
+
+I even had time to try [Problem F](https://codeforces.com/contest/1738/problem/F), which was a tactically correct decision since the solve count between E and F was 483 and 344 respectively, not much of a difference. That said, both problems are pretty much out of my current skill level. I ended up running out of time to actually complete a proper implementation of my solution to F, and even if I did fix it properly in time, the solution breaks down on graphs with more than n edges.
+
+Thus concludes another two week span where I ran in 5 contests. It was looking incredibly ugly at first, but I am recovering my rating now and may return to CM in time. SFU courses are still weighing down on me so I’m more focused on outlining the end of year recap post first right now. It also wouldn’t really make sense for someone who barely touched CM to be explaining what each rating means. Maybe for that post I’ll split into parts describing a few rating groups as I actually climb the elo ladder of CodeForces. For now though, this post marks the end of the 3rd quarter of this year where on average I participated in a CodeForces contest once every 4.38 days, or just under 2% of my life in the last 3 months has been in a CodeForces contest. Pretty insane to think about.
+
+Oh, and this contest’s Problem B also had a System Test Armageddon. That makes two contests in a row where Problem B decided to be a troll and cause lots of post contest failures. And this was right after I system failed Problem B in Round 823. What a coincidence. 
+
