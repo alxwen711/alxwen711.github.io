@@ -16,6 +16,7 @@ After manually estimating performance ratings over the last 9 months, I have the
 Each purple dot represents one ranked contest I have participated in on CodeForces. Based on these results I created a linear piecewise approximation to estimate performance based on rating change. This method is usually within 20 points of the method I’ve been using before so I’ll be switching, but past calculations are archived on the stat sheet.
 
 School is beginning to be much more heavy, and the 5 contests I was able to do in the last two weeks are less the expectation and more an anomaly. From here on out every contest matters just as much as each waking hour for me to navigate the hardest school term I’ll ever have.
+
 ### [Round 824](https://codeforces.com/contest/1735)
 
 Problems Solved: B, A, C, D
@@ -32,7 +33,7 @@ And in the next contest right after I wrote that, I lose rating. Well then. The 
 <summary> How to mind block on Problem D (solution spoilers)</summary>
 The solution is quite simple; each set must contain exactly 3 cards, and each meta set contains 5 cards in total, thus each meta set will contain 2 sets with one card being the uniting card. Thus a simple method is to count how many times each card appears in a set. If a card appears once, it is the uniting card of 0 metasets, a card with 2 set appearances unites 1 distinct metaset, 3 set appearances unites 3 distinct metasets, and n set appearances unites n(n-1)/2 metasets. 
 As for why it took me half an hour to figure this part out when the harder part is determining all the possible sets? The example diagram circled entire metasets instead of just sets. So for some reason I kept trying to think of how the number of times each card appears in a metaset has to do with the number of metasets. 
-<details>
+</details>
 
 Well, at least I got a full A-D solve?
 
