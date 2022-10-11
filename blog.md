@@ -9,8 +9,6 @@ permalink: /blog
 
 [1 Year of CodeForces in Review](https://alxwen711.github.io/blog/2022)
 
-[CodeForces Rating System Explained](https://alxwen711.github.io/blog/CFRating)
-
 ## 2022
 
 ### [October](https://alxwen711.github.io/blog/Oct22)
