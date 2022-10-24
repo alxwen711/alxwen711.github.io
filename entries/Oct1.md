@@ -58,12 +58,13 @@ Had I solved [Problem B](https://codeforces.com/contest/1736/problem/B) without 
 - Edu Round 136: Strategic misplays, but still good A-C solve I guess?
 - Global Round 22: An actually good A-D solve
 - Round 824: Ugly A-D
-Round 825: SpeedForced, B implosion
+- Round 825: SpeedForced, B implosion
 
 I’ve had only ONE Candidate Master level performance in the last 10. Not to mention 4 that were sub Expert. One or two poor contests is bad luck. A 6 week span where I have two, maybe three good contests and the rest poor to atrocious is a serious problem. 
 
 There isn’t much sense in continuing with an aggressive participation strategy. I at least have the benefit that I won’t miss many rated contests since I can’t join most of the ones in the rest of this month, but there are serious flaws I need to address here. I’m not stepping back from competitive programming, but more I need to specifically practice on what was once my strength of having a solid foundation that allowed me to breeze through A-C, because I sure as hell don’t show that nowadays. I’m planning for my next contest to be the open rated contest on October 30th, hopefully by then I can regroup myself mentally.
 
+_Oct 23rd edit: The schedule for contests has been updated since and the likely next contest will be on Novemeber 6th. As such no contests will be recapped in the next entry. I'll probably instead write on a few practice problems I've done and the plan for the last 2 months. Assuming my current school term allows me any time to do so._
 
 ## October 16th-31st
 
