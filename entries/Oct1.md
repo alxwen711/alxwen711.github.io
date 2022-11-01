@@ -46,7 +46,7 @@ New Rating: **1716** (-74)
 
 Performance: **1482**
 
-Had I solved [Problem B](https://codeforces.com/contest/1736/problem/B) without going on a psycho half an hour onslaught with SEVEN wrong answers, the main focus of this recap would’ve been my attempts on the later problems [C2](https://codeforces.com/contest/1736/problem/C2) and [D](https://codeforces.com/contest/1736/problem/D). Instead, I ended up a victim of SpeedForces and what could’ve been a top 600 finish now becomes yet another screwed contest. Most of B’s errors were just incredibly sloppy mistakes in logic, and even if I did not see the relatively simple solution, having 7 wrong submissions means something really screwed up. I guess there is consolation in the fact that I did end up solving B, but I’m normally supposed to do well in SpeedForce type contests. The 10 contests since my breakout run have been as follows:
+Had I solved [Problem B](https://codeforces.com/contest/1736/problem/B) without going on a psycho half an hour onslaught with SEVEN wrong answers, the main focus of this recap would’ve been my attempts on the later problems [C2](https://codeforces.com/contest/1736/problem/C2) and [D](https://codeforces.com/contest/1736/problem/D). Instead, I ended up a victim of SpeedForces and what could’ve been a top 600 finish now becomes yet another screwed contest. Most of B’s errors were just incredibly sloppy mistakes in logic, and even if I did not see the relatively simple solution, having 7 wrong submissions means something really screwed up. I guess there is consolation in the fact that I did end up solving B, but I’m normally supposed to do well in SpeedForce type contests. The 11 contests since my breakout run have been as follows:
 
 - Edu Round 134: Sloppy B and C execution, missed D, dropped out of CM
 - Round 818: Choked CM due to 7th maths fail and implosion on basic syntax
@@ -67,4 +67,28 @@ There isn’t much sense in continuing with an aggressive participation strategy
 _Oct 23rd edit: The schedule for contests has been updated since and the likely next contest will be on Novemeber 6th. As such no contests will be recapped in the next entry. I'll probably instead write on a few practice problems I've done and the plan for the last 2 months. Assuming my current school term allows me any time to do so._
 
 ## October 16th-31st
+I closed off last post by stating I would take an actual break from rated CodeForces contests until at least the 30th, and for once I actually followed through on this, even if it was mainly due to the fact that I was having midterms in this time. Instead of grinding more live CodeForces contests and risking further tilt, I pretty much went through more or less a three step process to recollect myself for the final two months of 2022.
 
+### Mental Recollection/Reset
+
+What I did not mention from the last post is that a few days after the Round 825 debacle, I attempted a self imposed practice contest described as follows in this personal log:
+
+*For Sunday’s training exercise, I will set up 10 problems rated 1400 to 1699. The goal will be completing all of these contest style in the shortest amount of time possible, or until 3 hours have passed. Each problem will be timed, and if I do not have a solution in 45 minutes, it is passed and marked as TLE. The 10 problems chosen will be from Division 1+2 contests to fully emulate real question styles I could find.*
+
+Seems reasonable enough at first since 1400-1699 rated problems were where most of my woes were in past contests. The volume was a bit high but this was with the intent of building mental endurance.
+
+Let’s just say that this training excursion meant to build confidence did not work out. My initial expectation was to solve the first 6-7 problems in 3 hours. What ended up happening was 3 solves in 3 hours. Note that I also looked through all 10 problems as well, so these were the problems I perceived as the “easiest”. There really isn’t much of a point going into what blunders I made in my solving attempts because that day the cause of those blunders was obvious. I was completely burnt. When you have a bad contest due to forgetting something basic that’s one thing, but a long streak of underperforming due to missing basic concepts is tilt. Thus after that contest, I took an actual break. Up until Halloween I did not look at a single CodeForces problem intentionally, with the intent to refresh myself and recollect myself mentally. Writing this at the end of the month I can say that this helped me mentally to compose myself; previous posts were already an indication that I was focusing more on my mistakes and failures out of anger rather than trying to understand why they happened, which is never a way to improve. Taking a break from CodeForces was needed, and now I feel ready again to compete.
+
+### Learning New Concepts (Outside of CodeForces)
+
+Even though I took a break from CodeForces, it does not mean I stepped away from competitive programming entirely. Going completely cold into a contest in November would be a setup for failure, so I took these two weeks to review various concepts. Most of this was with the SFU Competitive Programming Team where several practice contests were done on vjudge. Topics looked at in the last two weeks focused around strings and geometry, the latter being a weaker point of mine. I was also able to retrain my consistency on easier problems; I do mention this a lot, but being strong at fundamentals is probably the most important aspect for mastering anything.
+
+At the end of these two weeks I had learnt various methods on solving geometry problems more easily. I’m now ready for CodeTON Round 3 on November 6th, but to finish my preparation, I did a virtual contest on CodeForces.
+ 
+### [Round 829](https://codeforces.com/contest/1754) Practice Run
+
+Problems Solved: A, B, C2, C1, D
+
+Performance: **1710**
+
+The fast A and B are a good sign, and even if [Problem D](https://codeforces.com/contest/1754/problem/D) was only 1600 in difficulty (maybe the lowest I’ve ever seen), solving it in 20 minutes is well done. Only [Problem C](https://codeforces.com/contest/1754/problem/C2) had significant issues. C was split into a easy and hard version, and I did take the right strategy of going straight for C2 since I was confident I would get it. My mistake was thinking that a fail on C2 meant that the solution could pass on C1, this led to losing 100 points unnecessarily from 2 wrong submissions on C1 due to baseless hope. I also shot myself in the foot badly with my [second attempt](https://codeforces.com/contest/1754/submission/178745442) by inexplicably assuming that if the array sums to 0, having the entire array as a single segment is a solution where it should be every element is its own segment. I did find this mistake after 15 minutes which is quick compared to past blunders. In all, this was a good refresher contest, and had this been rated, I would have lost 1 ELO to go to 1713. It’s still better performance wise than 5 of my last 10 rated contests, and more importantly, I am ready to regain CM now.
