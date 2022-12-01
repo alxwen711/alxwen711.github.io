@@ -8,6 +8,7 @@ permalink: /blog/Nov22
 ## November 1st-15th
 
 Welcome back to a regularly scheduled recap of my CodeForces contest shenanigans. I may not have much time for actual practice due to school being extremely heavy right now, but with how much I’ve tanked the last 10 contests, I can’t really go much lower right?
+
 ### [Round 833](https://codeforces.com/contest/1748)
 
 Problems Solved: A, B, C
@@ -38,7 +39,7 @@ I guess welcome back? There’s still time for me to return to CM before the end
 
 ## November 16th-30th
 
-![https://www.youtube.com/watch?v=98T3PVaRrHU](docs/assets/images/doop.png)
+[![why.](docs/assets/images/doop.png)](https://www.youtube.com/watch?v=98T3PVaRrHU)
 
 *The above image is clickable by the way.*
 
