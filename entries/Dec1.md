@@ -36,6 +36,11 @@ I find it funny that the contest narrative for this round is nearly identical to
 
 (This post will be updated once I figure out if my original idea on D was right or not.)
 
+Update: [My attempt at D](https://codeforces.com/contest/1762/submission/185369118)
+
+Looking back at Problem D, the method I seemed to use was creating a “cycle” of the n hidden values and checking the gcd between each adjacent pair. Each value will then have 2 gcd values assigned to it (due to having 2 neighbours in the cycle setup), and if the maximum of these values is 1, it can be eliminated as not being the zero. This is because if it was, then the only way both gcd’s are 1 are if the value to its left and right are 1, which is impossible. In addition, values that have both of their gcd values the same can also be eliminated. A new cycle is formed with the remaining values, and the process repeats, except the minimum gcd value for elimination is now 2, then 3, and so on until 2 values in the cycle remain. The issue seems to be that this method requires too many guesses; I used a fail safe line to check if this was the case by having the algorithm guess the first two values remaining in the cycle if no more guesses were needed, and this ended up in a wrong answer.
+
+To those still here, this update was actually posted December 25th since the past week or so has been covered by the last bit of my school term and several days of much needed rest. Merry Christmas, Happy Holidays, or happy New Year’s Eve’s Eve’s Eve’s Eve’s Eve’s Eve if that’s your thing.
 
 ## December 16th-31st
 
