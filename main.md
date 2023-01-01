@@ -23,7 +23,7 @@ Hello, and welcome to my Github Webpage. Here I write about mostly coding relate
 
 - End of year recap post: Will also be posted to CodeForces. This doubles as a how to get to Expert post. (It's meant to be a how to reach CM post but with how September went there's unsuprisingly a change of plans.)
 
-- About me page: Goal is to have a more fleshed out about me page, right now there isn't much there
+- About me page: To be updated
 
 ## Contacts
 
