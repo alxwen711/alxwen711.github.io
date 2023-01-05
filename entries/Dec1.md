@@ -44,3 +44,73 @@ To those still here, this update was actually posted December 25th since the pas
 
 ## December 16th-31st
 
+The last log of 2022. I am thankful that I made it through whatever was the madness that was my school term this year, but this journal is not really meant for me ranting. I had 3 more contests to try and climb 255 ELO to end at CM for 2022. It’s a near impossible task, but I can still give it my best shot.
+
+### [Polynomial Round 2022](https://codeforces.com/contest/1774)
+
+This is a special case where I have to hide the general stats until the end of this contest recap, because this truly was the contest of the year. Shame this wasn’t the finale.
+
+This contest began with a solve on [Problem A](https://codeforces.com/contest/1774/problem/A) and [B](https://codeforces.com/contest/1774/problem/B) in 7 minutes, a new personal best. Problem B in particular was a question I did especially well on to solve quickly; in fairness, the code for it was incredibly simple:
+
+```python
+# input helper functions not included below, self-explanatory what readint/ints/ar do
+for i in range(readint()):
+   n,m,k = readints()
+   ar = readar()
+   x = n//k
+   if n % k != 0: x += 1
+   if max(ar) > x: print("NO")
+   else: print("YES")
+```
+
+It pretty much was a matter of making sure there was not too much paint of a single colour with a maximum function. Very simple stuff really.
+
+[Problem C](https://codeforces.com/contest/1774/problem/C) is a basic dp problem which is observed by the requirement to give the number of players that can win for every prefix of the binary string. The info given is only a binary string and it can be up to 200000 bits long, so there should be a basic O(1) dp to find each value. In this case there is by tracking how many consecutive 0’s or 1’s are there so far from the current bit. Trying the problem over smaller testcases led to an Accepted verdict at 20 minutes, meaning I’m still on my best ever pace.
+
+[Problem D](https://codeforces.com/contest/1774/problem/D) is where my pace begins slowing down due to the problem difficulty, even though it was also worth 1500 points like C. Checking if the problem is possible is simple by counting the total number of 1’s and seeing if it is divisible by the number of rows. By also tracking how many 1’s each row has it is possible to track which rows have too many 1’s or too few 1’s and swap accordingly. In my setup I arranged the rows from most to least 1’s for easier tracking. To top it all off, there will always be a possible case where 1 row has a 1 in a position where another has a 0 if the rows have differing numbers of 1’s, so swaps are always possible. With proper checking the runtime is effectively O(n log n) for sorting the rows plus O(nm) since each value in the 2d array only needs to be checked once at most.
+
+This was the last problem I solved on this contest but a special mention should be given to my attempt on [Problem E](https://codeforces.com/contest/1774/problem/E). I made some notes on my fixed solution after the contest [here](https://codeforces.com/contest/1774/submission/186712575) (note that the answer should be `a+b’,b+a’`, no min clause is needed). The submission in the contest had the same idea except there was a miscalculation in the eval function determining the steps needed (it’s not just depth of each node times 2), and the updated solution is correct, just really badly implemented to the point that the time limit becomes an issue. This would normally be the end of the contest.
+
+[And then this happens.](https://codeforces.com/contest/1774/submission/185641544)
+
+My extended discussion on Problem B was foreshadowing this successful hack partially by me rushing through the first few problems, partially by very good observation, and partially by hilariously weak pre-tests. It turns out my code fails the following idea:
+
+```
+1
+10 3 3
+4 4 2
+```
+
+In this case a setup like `4 3 3` would be needed. Somehow, I actually figured out the error pretty quickly, being that if x is the maximum amount of one paint colour allowed, the colouring is impossible if there is more than x of a single colour OR there are more than `n % k` colours with exactly x amount (n being number of tiles to colour, k being # of consecutive tiles with no repeats). To top it all off, Problem B ended up becoming a System Test Armageddon so the hack on my first solution ironically saved me in a sense; had it not happened, I would have almost certainly gotten 0 points on B from a failed main test. 
+
+This really was a contest. That’s all I can say. It had everything from a “clean” start to solving more complex problems to myself actually not being entirely screwed on the later problems to a crucial hack in the final moments. Such an incredible contest hereby is awarded 2022’s CodeForces Contest of the Year (It will be formally awarded in an actual Codeforces post recapping this entire year).
+
+Problems Solved: A, ~~B,~~ C, D, B
+
+New Rating: **1772** (+27)
+
+Performance: **1841**
+
+### [Round 841](https://codeforces.com/contest/1731)
+
+Problems Solved: A, B, D
+
+New Rating: **1763** (-9)
+
+Performance: **1735**
+
+Problems [C](https://codeforces.com/contest/1731/problem/C) and [D](https://codeforces.com/contest/1731/problem/D) were both worth 1500 points in this contest which explains how I solved D but not C and that both problems had a similar number of clears. This contest also happens to be one of the best I have performed on from a strategic standpoint. My progress on C pretty much amounted to “find the subarrays with an xor value that is a square number”; past that I had not much. There are only about 512 possible square number values the subarrays could have, so technically iterating through each one with a linear time algorithm would result in about 100 million operations which is just barely possible for Python. The issue is that I have no clue what the linear time algorithm is. Hint 3 states that using prefix XOR is part of the solution which will be something for me to look at.
+
+Problem D requires finding a minimum value across a range of values in a 2d grid, and was actually pretty simple for me. It involves modifying a sparse table to be used for the 2d grid, which allows min value lookups in O(1) time. This means any size L can be tested in at worst O(nm) time, so combining with a binary search to find the largest possible L, this results in O(mn log(n)) time, assuming n < m. (If m < n, then it would be log(m)). I started this problem after about 10 minutes of attempting C, and this resulted in a best case scenario. I’m unsure how I still lost rating from this, but I played up to potential and didn’t shoot myself in the foot. I’ll call this a good contest.
+
+There is one last contest for 2022 as tradition:
+
+### [Good Bye 2022](https://codeforces.com/contest/1770)
+
+Problems Solved: A, B, C
+
+New Rating: **1805** (+42)
+
+Performance: **1913**
+
+I may not have reached CM after this contest, but it at least is a good note to end 2022 on. Like the last few months it wasn’t perfect, but overall was a solid run. I had a wrong submission on both [Problem B](https://codeforces.com/contest/1770/problem/B) and [C](https://codeforces.com/contest/1770/problem/C), but unlike past contests, it was only one wrong submission each and I still had quick solves overall. [Problem D](https://codeforces.com/contest/1770/problem/D) had some progress but I did have an error in determining if a configuration existed. There wasn’t any real choke in implementation or gimmick involved, I simply struggled with determining how D’s solution worked. I’m not too disappointed though since I got A through C quickly and in previous months there was a case where I choked C. In all this was a solid end to 2022. A full recap on Codeforces will be out soon. See you all in 2023, where I will be aiming much higher. At the moment maybe around IM.
