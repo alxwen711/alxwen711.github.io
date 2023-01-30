@@ -67,3 +67,114 @@ Thus concludes the first two weeks of 2023 on CodeForces. As for current school 
 
 ## Jan 16th-31st
 
+### [Educational Round 142](https://codeforces.com/contest/1792) 
+
+Problems Solved: A, B, C, D
+
+New Rating: **1902** (+6)
+
+Performance: **1917**
+
+Truly the “A Winner is You!” moment.
+
+The only problem I had any significant issues with was [Problem C](https://codeforces.com/contest/1792/problem/C). This is a pretty good case where finding just the answer itself is much easier than trying to find the optimal answer, in this case, a minimal sequence of paired values that will result in a sorted permutation. My first idea was based around looking at the first and last values and building from there as a starting point, but there’s a simpler and actually correct method in checking if the middle 2x values are already sorted; if they are then an operation for those values aren’t needed. Answer would then be (# of remaining unsorted values)/2, with a similar idea for odd length arrays.
+
+[Problem D](https://codeforces.com/contest/1792/problem/D) is made significantly easier since each permutation can only go up to 10 values. This then involves some relatively easy hashing to mark what array setups are possible. For instance:
+
+```
+Let A = [6,8,1,7,4,3,2,5]
+In dictionary D, mark the following as keys: 
+“**1*****”
+“**1***2*”
+“**1**32*”
+“**1*432*”
+“**1*4325”
+“6*1*4325”
+“6*174325”
+“68174325”
+```
+
+For checking the best possible beauty of an array:
+
+```
+Let B = [3,4,7,1,8,2,5,6]
+If d.get(“***1****”) == None: beauty = 0
+If d.get(“***1*2**”) == None: beauty = 1
+If d.get(“3**1*2**”) == None: beauty = 2
+Repeat as above until…
+If d.get(“34718256”) == None: beauty = 7
+Beauty = 8 #all cases passed
+```
+
+Conveniently, you can just use “0” to represent 10 in this system. Thankfully using strings as keys for dictionaries in Python is significantly harder to hack since the hash function is harder to decipher. And that is how I got to Candidate Master for the 3rd time. There were also Problems A and B, but B was solved in 12 minutes and A in literally 1. More importantly this is the first time I’ve completed A through D in 4 straight contests. Hopefully this means the skill cap on Problem E will be more attainable.
+
+### [Round 846](https://codeforces.com/contest/1780)
+
+Problems Solved: A, ~~C,~~ B, D
+
+~~New Rating: **1837** (-65)~~
+
+~~Performance: **1628**~~
+
+My reaction to still being in Candidate Master after this contest:
+
+![A winner is you!](ooflmao.png)
+
+My reaction is only marginally sarcastic since I actually did quite well on [Problem D](https://codeforces.com/contest/1780/problem/D) and while I did take a long time to get [Problem B](https://codeforces.com/contest/1780/problem/B), strategically going for [Problem C](https://codeforces.com/contest/1780/problem/C) was the right move in theory. I get back to Problem C since D actually has a very clean solution.
+
+In D we first notice that since n is limited to 10^9, its binary representation can only have at most 30 bits. This almost certainly means that each operation will likely determine at least 1 bit in the final n value. You also need to be sure you don’t subtract too large of a value, so my thought was to subtract powers of two starting from 1. Let’s call the current value being subtracted c. After each substitution, one of two cases can happen:
+
+- The number of 1 bits drops by one: this means the bit subtracted was a 1, i.e. something like  xxxx1 -> xxxx0. Simply add c to the final answer, and multiply c by two to act as a shift.
+
+- The number of 1 bits increases by a (a can be 0): this means the bit subtracted was a 0, i.e. something like xx100 -> xx011. In this case the bit a+1 positions left was a 1, so add 2c^(a+1) to the answer and multiply c by 2^(a+1) to shift the bits
+
+You only have to repeat this v times, where v was the number of 1 bits originally in n to get the answer. Overall I liked this problem, it’s a simple but clever use of bitmasks. Had there been no other issues with this contest, I probably may have actually gained rating since aside from “solving” C before B due to some overthinking I actually had a very clean contest with no wrong submissions.
+
+And then there is C. As of writing this, C has been literally deleted out of existence on the webpage, but here is a quick rundown of the problem:
+
+There are $n$ people invited to a restaurant and $m$ tables in the restaurant. The $i$th person likes dish $a_i (1 <= a_i <= n)$ and the $j$th table seats $b_j (1 <= j <= m, 1 <= b_j <= 2000)$ people. You are to decide which singular dish is served at each table, with the goal being to maximize the number of people eating their preferred dish. 
+
+Each testcase consists of 3 lines. The first line contains $n,m$. The second line contains array $a$ describing the people’s preferred dishes. The third line contains array $b$ describing the seating capacity of each table. There number of seats will always be at least n. Also, $1 <= n,m,a_i,b_j <= 2000$.
+
+My original idea was first to count how many people like each dish and then start placing them based on the largest to smallest table. This was through a greedy method as I would use the largest group of people for the largest remaining table and repeat until everyone has been placed, with the exception being that if a table could seat an exact group, then I would prioritze said group to maximise satisfaction. I.e. if I was seating a table for 3 people and there happened to be exactly 3 people who liked dish 4, then even if a larger group existed, I would seat those 3 people. This meant that for the following testcase:
+
+```
+1
+11 5
+1 1 1 1 1 1 2 2 2 2 2
+5 3 3
+```
+
+I would return that 11 people could be happy by seating everyone who likes dish 1 at the 3 seat tables and everyone who likes dish 2 at the 2 seat tables. 
+
+[My submission](https://github.com/alxwen711/contestSubmissionArchive/blob/main/codeforces/live%20contests/2023-1/846/c.py)
+
+This is where the crazy begins. It turns out this exact testcase caused a “System Test Fail” for my solution, because the intended “solution” used a similar greedy method without the exact group size rule. At this point it’s pretty clear that the intended solution is completely wrong, hence why this problem and contest was declared null and void. Thing is though that even my current solution would still be wrong on this testcase:
+
+```
+1
+13 4
+1 1 1 1 1 1 1 1 1 2 2 2 2
+3 3 3 5
+```
+
+The optimal solution would be to seat everyone liking dish 1 at the 3 seat tables and the remaining people at the 5 seat table for 13 happy people, but my program only returns 12.
+It turns out, there is no greedy method to solve this problem; the problem itself can be correlated to the [3-partition problem](https://en.wikipedia.org/wiki/3-partition_problem) which is NP-complete. The fact that so many people including myself went for a greedy idea can be attributed to the expectation that Problem C would not be that complicated, but it’s still an avoidable error. I’m lucky that I wasn’t punished for this questionable reasoning.
+
+### [TypeDB Forces 2023](https://codeforces.com/contest/1787) 
+
+Problems Solved: A, B, D
+
+New Rating: **1834** (-68)
+
+Performance: **1619**
+
+And this is what I meant by being lucky. This contest had several things go wrong, mainly Problem B and C. [B](https://codeforces.com/contest/1787/problem/B) wasn’t a complete blunder as my method for using prime factorization and greedily creating `a` values was correct, I just took 30 minutes on this problem from slow implementation. In this case it was more me struggling with finding a way to convert my solution into code rather than being careful. This is most likely just a rare case where I wasn’t able to go fast on this contest as a whole; mentally on this day something felt off. It also felt off on [C](https://codeforces.com/contest/1787/problem/C) since I missed the problem entirely. The intended solution does have dp elements which means that at least I am using the correct technique, but I couldn’t figure it out. [What I came up with](https://codeforces.com/contest/1787/submission/191146506) was splitting each value min-max optimally, then having two setups: one with min value then max value, and the other with max then min value. Then I combined these results in a dp manner. It’s the kind of question where there’s a relatively simple way to solve it, but it’s hard to see at first.
+
+The silver lining of this contest is that it was 3 hours, which was the only reason I still keep my Expert level performance streak. Two minutes shorter and I would not have solved [D](https://codeforces.com/contest/1787/problem/D), which partially took that long due to implementation hell from rushing through my code. It’s actually a very good “graph” problem in that while no graphs are explicitly stated it’s pretty clear that the points can be represented as a directed graph. Much of the implementation issues in my [solution](https://codeforces.com/contest/1787/submission/191162978) come from the `loopback` function used to determine how nodes not on the starting path affect the number of possible values. In past months I’d probably have choked this question away or have not figured out this part of the solution. Instead, I managed to avoid complete collapse and disaster. Alas, the point scale was a bit wack this contest (500-1000-1750-2000), so solving D so late was only enough to move me about 1300 places up to rank 2254, even though top 1300 was attainable with lightning A-C solve. This also makes this the 4th contest that I can technically say “rip CM.” (the 3rd would be Round 846, if C is disregarded then my pace on A,B,D would’ve dropped me.)
+
+![f in the chat](https://codeforces.com/predownloaded/52/3c/523c2fefd8c4ee50c2d3f4b5d24a1b0555756a66.png)
+
+
+Now a quick reflection on current SFU life. It turns out 3 courses are not entirely meant to be “easy”. I thought it would since the drop from 6 to 3 should feel more significant, but 4 was considered a full course load, and the 3 I’m taking aren’t exactly light courses. Even still this month was much needed for a sanity check after the last two months. The co-op process is still in progress and I’ll hopefully be in one for the summer term.
+
