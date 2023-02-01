@@ -178,3 +178,4 @@ The silver lining of this contest is that it was 3 hours, which was the only rea
 
 Now a quick reflection on current SFU life. It turns out 3 courses are not entirely meant to be “easy”. I thought it would since the drop from 6 to 3 should feel more significant, but 4 was considered a full course load, and the 3 I’m taking aren’t exactly light courses. Even still this month was much needed for a sanity check after the last two months. The co-op process is still in progress and I’ll hopefully be in one for the summer term.
 
+
