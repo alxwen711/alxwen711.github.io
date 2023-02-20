@@ -7,7 +7,9 @@ permalink: /blog
 
 [My CodeForces Progression](https://docs.google.com/spreadsheets/d/1aQObaGKSDEtilQrLuxFZ6-naW-EMjr4uTE5LnnNn6tY/edit?usp=sharing)
 
-[1 Year of CodeForces in Review](https://alxwen711.github.io/blog/2022)
+[1 Year of CodeForces in Review](https://codeforces.com/blog/entry/111287)
+
+Here you can find every biweekly post I've made in self reflection. Much of this regards coding competitions I have done throughout the years but there are occasionally other secondary topics mentioned.
 
 ## 2023
 <!---
