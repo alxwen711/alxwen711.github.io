@@ -26,9 +26,9 @@ Here you can find every biweekly post I've made in self reflection. Much of this
 ### [July](https://alxwen711.github.io/blog/Jul23)
 
 ### [June](https://alxwen711.github.io/blog/Jun23)
-
-### [May](https://alxwen711.github.io/blog/May23)
 -->
+### [May](https://alxwen711.github.io/blog/May23)
+
 ### [April](https://alxwen711.github.io/blog/Apr23)
 
 ### [March](https://alxwen711.github.io/blog/Mar23)
