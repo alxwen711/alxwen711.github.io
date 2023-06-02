@@ -99,3 +99,42 @@ This contest really shows the skill gap between Div 1 and Div 2. In Div 2, the a
 
 ## May 16th-31st
 
+With 5 months of this year done, before I begin my usual recap, I’ll touch up on what’s been going on with my CodeChef profile. Since the start of this month I had begun an alternate account with the reason to fix my screwed up rating from last [February](https://alxwen711.github.io/blog/Feb23). For some reason it did not dawn on me to link my CodeChef profile back then, so here it is.
+
+[alxwen711’s CodeChef profile](https://www.codechef.com/users/alxwen711) 
+
+And here is how my current alternate account is going:
+
+[my alternate account:](https://www.codechef.com/users/snowlucario)
+
+I think it’s safe to say that my alternate account shows my skill level more accurately. This basically confirms my theory of CodeChef’s rating system working on some sort of confidence factor that heavily increases rating change in the first few contests, and is an inadvertent benefit to creating an alt account. Another note on this rating here is that while 2100 is pretty good, 2100 on CodeChef is not remotely close to 2100 on CodeForces. It feels more like 1900 on CodeForces. At least though CodeChef’s rating system, while very stubborn with a higher number of completed contests, isn’t as scuffed as Leetcode. That honestly feels like an entirely different discussion where I talk/rant about various rating systems on different competitive programming sites, where I go over how to approximately compare each one/explain the loopholes that are possible.
+
+Anyways, I digress. On to the regularly scheduled programming.
+
+
+### [Round 875](https://codeforces.com/contest/1830)
+
+Problems Solved: A
+
+New Rating: **1993** (-87)
+
+Performance: **1727**
+
+Remember the supposed luck I had in the previous contest? This is basically the opposite scenario. Again while this is a Division 1 contest, only getting one problem isn’t exactly good. With [A](https://codeforces.com/contest/1830/problem/A) the only real solace was that it was a tree problem that I actually executed properly, asides from the first submission having some of the worst implementation I’ve ever done causing a TLE. The difference between my two submissions for A was a 3 second TLE and a 654 ms Accepted verdict. It’s nice knowing that Python can be fast enough, but the fact the first TLE even happened was shameful.
+
+This only acted as a prelude to [B](https://codeforces.com/contest/1830/problem/B). 
+
+
+
+
+<details>
+<summary>The Tribulations of B</summary>
+Most of my methods ended up computing to $O(n^2)$ ideas involving finding all the possible pair values or iterating through 1 to n. In this the main observation was missed in that the sum of two values in the array can be at most 2n. This means for the multiplied values, call these a and b, `min(a,b)` has to be at most `sqrt(2n)`. 
+
+From here, the solution is to first map all the pairs into a 2d dictionary setup, such that `d[a][b]` is the number of times the pair (a[i],b[i]) is in the array. Then you count how many pairs of $(a[i],b[i])$ and $(a[j],b[j])$ exist where $a[i] <= a[j], a[i] < sqrt(2n)$. This is done by iterating value a for d[a] up to sqrt(2n), and for each d[a], comparing it with every value in d[b] where b >= a, and if a pair exists, adding it to the answer. In my [example solution](https://codeforces.com/contest/1830/submission/207803351), one such pair possible could be $d[2][1] = 3$ and $d[3][5] = 2$ since 2x3 = 1+5, which would add 6 to the answer since (2,1) appears 3 times and (3,5) twice. There is also a bit of extra code to account for double counting in using the same a value or pair of values.
+
+Since each value up to sqrt(2n) has to be iterated through and each iteration could search through the majority of the array, this ends up being a $O(n^{1.5})$ algorithm. Roughly speaking with this algorithm around 100 million operations are needed, and this is the point where the difference in C++ and Python somewhat matters. Both are capable of completing the problem in time, but the current fastest solution takes under 200ms while the fastest Python solution takes 1450ms. There is optimization I have to learn in Python as while I did end up solving this problem, my solution was extremely close to the 4 second time limit, and it passing through is borderline luck based.
+</details>
+
+
+As for [C](https://codeforces.com/contest/1830/problem/B)? I would like to say I made some sort of progress on this question but it turns out that Catalan numbers aren’t needed to solve the problem. I pretty much ran straight into a brick wall there which feels pretty symbolic of this contest.
