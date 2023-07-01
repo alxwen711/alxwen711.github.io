@@ -115,3 +115,100 @@ The entire solution I devised for E is correct. The only problem was that I had 
 
 ## June 16th-30th
 
+Today, on ***Days of Our Programmers,***
+
+Okay, I won’t go into dramatic persona mode for this log. That said, a bunch of funny things occurred in these contests. Plus there’s an important update at the end.
+
+### [Round 880](https://codeforces.com/contest/1835)
+
+Problems Solved: A
+
+New Rating: **2075** (+65)
+
+Performance: **2242**
+
+![ONE](docs/assets/images)
+
+Maybe I could actually I don’t know, solve the second problem on a Division 1 contest for once? I find it amazing that my 5th best contest by performance rating can somehow still feel underwhelming, but here we are. Literally the only reason I got this rating increase was because I solved [A](https://codeforces.com/contest/1835/problem/A) in 10 minutes. Even this problem I have no clue how this ended up being rated at 1700 because the fact that brute force can be used to solve this because `A,B,C <= 3` for most cases should make this so much easier.
+
+Then we get [B](https://codeforces.com/contest/1835/problem/B). I’ll just let this upcoming rant explain why I’m pissed over this.
+
+<details>
+<summary>Everything I have to say about B</summary>
+
+This problem is partially the reason why the [blog post](https://codeforces.com/blog/entry/117337) for this contest is a nuclear waste zone, because going from a problem requiring a slightly optimised brute force to this might be the most egregiously overkill difficulty gap I’ve seen between two problems. In Division 1, this problem had around the same solve rate as C and is one of the few contests I’ve seen where only about a quarter of Div 1 contestants actually get B. Div 2 was even worse off; this problem was Div 2’s D problem and it got 7 solves there. Seven. (Before you ask, Div 2E ended up with 11 solves and no one got 2F). In what universe is deciding a contest on 3 problems considered legitimate? Pretty much everyone from 20th to 1500th was decided on who solved A to C fastest in Div 2, which is not exactly ideal. This also happened in Div 1 to a lesser case, hence why I decry my +65 gain as completely illegitimate.
+
+Now for the actual problem, which is made worse by the fact I nearly had the answer. Since your ticket is rank `n+1`, you always lose tiebreakers on ranks to other tickets, so you can just sort them in order of number to make this easier. In this sorted list, suppose you have a number x, you calculate the minimum and maximum rank of your ticket in terms of value. What I mean is that if x is lower than all other tickets, then your rank is 0, if you have a ticket with a higher value than all other tickets, your rank is n, and so on. The min/max rank difference is for if you are considered higher/lower rank in value to tickets with the same number. Using this info you can figure out the range of values your ticket is a winner by computing midpoints between `(x,ar[maxr-k])` and `(x,ar[minr+k])`, where maxr and minr are max/min ranks of the ticket in value.
+
+You cannot test every value from 0 to `m` due to time constraints, and this is fine as only a few points are needed to find the optimal value. This is where I screwed up first, as I thought the best ticket number would always be within 1 of someone else’s ticket; so if someone had a ticket with the number 43, I would test 42, 43, and 44. The solution requires testing 41, 42, 43, 44, and 45, ie. all values within 2 of someone else’s ticket. I would say I know why this is the case, but I don’t actually completely know. I’m guessing this has something to do with a rounding case? This [editorial solution](https://codeforces.com/blog/entry/117394?#comment-1038636) by Soultaker explains this reasoning best here. 
+
+To top this all off, even after implementing the solution, I still had TLE occur because I ended using a O(log n) binary search to determine maxr and minr for each value tested. There is a viable method that uses two pointers to increment maxr and minr that takes amortised O(1) time per value. I will also note that this most likely does not happen if the limit for `n` is not 1000000. I think its safe to assume that 200000 or even 500000 would have been enough to limit the max runtime for solutions to $O(n log n)$ but the 1000000 limit meant that my initial Python idea ended up TLEing over that extra log n factor. I have no further comments on this problem.
+</details>
+
+To top this off, had I got B, I actually end up reaching 2100. So in retrospect, I also choked on this contest. Yay.
+
+
+### [CodeTON Round 5](https://codeforces.com/contest/1842)
+
+Problems Solved: A, B, C, D
+
+New Rating: **2051** (-24)
+
+Performance: **1975**
+
+This sort of contest does highlight my improvement over the year. Last year at this time, this would be considered an excellent contest, but now this sort of run is quite pedestrian. [A](https://codeforces.com/contest/1842/problem/A) and [B](https://codeforces.com/contest/1842/problem/B) were completed in about half the time it would take for me to fully explain my thought process on both questions, and then we go to [C](https://codeforces.com/contest/1842/problem/C) which was a dp scuff question. I did minimise the number of wrong submissions made but taking 50 minutes and 3 wrong attempts here was not ideal to say the least. This is saved by myself actually doing quite well on [D](https://codeforces.com/contest/1842/problem/D) since it was a graph problem. Funny enough, the idea for this problem is similar to [ABSOLUTEDIFF](https://www.codechef.com/problems/ABSOLUTEDIFF) from CodeChef Starters 96; both use a creative dijkstra implementation. In solving both of these problems though, I genuinely did not notice this similarity. In reflection, I find that with these contests I tend not to be really strong at identifying exact techniques/algorithms necessary to solve problems, but in many of my ad hoc ideas I end up using these techniques inadvertently.
+
+Anyways, on to the last contest for this month. I’ll just let the reflection speak for itself.
+
+### [Educational Round 151](https://codeforces.com/contest/1845)
+
+Problems Solved: A, B, C, D
+
+New Rating: **2129** (+78)
+
+Performance: **2330**
+
+
+Wow.
+
+I don’t know what else to say other than I actually made it. I had a feeling I’d reach Master at some point, I just didn’t expect it to be this soon and on this contest. The cause of this was a rocket pace A-C; 21 minutes was all that was needed, and even [C](https://codeforces.com/contest/1845/problem/C) was very fast.
+
+<details>
+<summary>Other thoughts on C</summary>
+
+Most of these solutions involve a dp of sorts, and there are multiple implementations of it that work, but the fastest way I thought of uses a single passthrough of the password database. Pretty much you do the following:
+
+1. Get all possibilities of the first digit in the password
+
+2. Start looking through the string for each occurrence of possible digit
+
+3. If all possibilities are exhausted, move to the next digit
+
+4. Repeat until either the entire database is exhausted (YES) or there are no more digits for the password (NO)
+
+In essence, this is a greedy method that chooses each digit to be the one showing up as late as possible in the database. Any digit taken earlier is suboptimal with some basic trial and error.
+
+</details>
+
+[D](https://codeforces.com/contest/1845/problem/D) pretty much completed this near perfect first hour of a contest. Alas, the second hour shows I still have some work to do with [E](https://codeforces.com/contest/1845/problem/E) still out of my perceived range, but D itself wasn’t exactly easy (about 1800 rated), and my pace there was well above my expectation.
+
+<details>
+
+<summary>Ideas on D</summary>
+
+I’m still a bit unsure as to the exact proof that this is correct, but what I can say is that the optimal floor will always be the score value right before a rating drop. Furthermore, you only need to consider the score values that are their prefix maximums, so if scores of 7, 4, and 9 occur at indices 3, 8, and 12 respectively, then the score of 4 at index 8 can be disregarded.
+
+With these points, we then need to determine what the final score would be if we set the rating floor to them. For this a running dp can be used from the back of the array. Keep track of two variables: `inc` and `debt`. From there you do the following with each ar element in reverse:
+
+```python
+if ar[i] < 0: debt += -ar[i]
+else:
+inc += max(0,ar[i]-debt)	
+ 	debt -= min(ar[i],debt)
+```
+
+The `inc` value is logged in the dp array to signify the total increase if a rating floor was set at that exact index. This will be an incorrect computation in some cases where the rating is declining or not at a maximum prefix peak, but for the values tested this is always accurate. From there is a simple matter of finding the best score possible and recording the rating floor used.
+
+</details>
+
+With that, a 1.5 year journey from unranked to Master has been completed. Perhaps in a future post I might post a brief reflection on what I learnt in this process, since there were some intriguing moments. I can say though this was good timing; as of writing this, there is a high chance after all that I will be in my first co-op this August. I’ll share more details once I am officially in, but it will be an intriguing new challenge for me. I haven’t really thought of the time once I step away from competitive programming, but even if I may have less time than usual for this passion, you can believe I’ll still find ways to continue this endeavour. For those still reading, just know that this journey was a major reason as to how I ended up with this great opportunity, so keep coding. These last 18 months have shown that it is always possible.
