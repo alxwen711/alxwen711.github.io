@@ -60,3 +60,49 @@ By all of this, it does mean that my run on this contest, while definitely atroc
 
 ## July 16th-31st
 
+### [Round 887](https://codeforces.com/contest/1852)
+
+Problems Solved: (none. really.)
+
+New Rating: **1874** (-86)
+
+Performance: **1602?**
+
+[For god’s sake.](https://www.youtube.com/watch?v=o1ERCJiUA0c)
+
+***Days of Our Programmers***
+
+I really thought this show was over. Since Educational Round 145 I had completed 18 contests in a row without major implosion, and it allowed me to reach Master. It should’ve ended there. This mockery of my comedic self destructions should ceased from there. But alas, here we are. Let’s get this over with.
+
+_The Proponent of Python’s road to competitive glory has recently unveiled once hidden troubles. Since late March our protagonist had been on a solid streak of progress to reach the unprecedented heights of Master. Even if this 2100 rating barrier was partially built on favorable conditions the execution of the ordeals was swift and consistent. Now though, an unsettling flaw is showing. The previous 884th round removed the Master title from our protagonist in dramatic fashion. A combination of unfortunate problem setting luck and an old menace in the Div 2B permutation problem caused a catastrophic collapse. Regardless, hopes are still high for the Dragon. He is only 176 points down from his peak, and he now looks to Round 887 for redemption. There is much to support this hope. [A recent LeetCode contest brought our writer to the top 0.4% on the website.](https://leetcode.com/alxwen711/) This 2400+ barrier crossing should be more than enough momentum to succeed in Round 887. Or so we think. Let us flash back to a previous time:_
+
+[FLASHBACK](https://alxwen711.github.io/blog/Feb23)
+
+_Back in February, our Protagonist wrote of his grand exploits in Starters 78. It was a fine contest in which the writer all but committed the great sin of unintentional sandbagging to take a silver medal, just one short of a Division 3 contest win. He then proceeded to boast of his accomplishment by ranting on the flawed rating system on CodeChef. This “momentum” led to being one problem short in the following ICPC regionals. Then we come back to the current age, where our protagonist is_ actually boasting of a top ~~100~~ 200 finish in a Leetcode contest where the problems and their difficulty have little similarity to a Division 1 CodeForces contest. This is truly disgraceful. Have I not learnt that the moment I even let a shred of overconfidence into myself that it usually leads to a collapse? I got completely kicked in the mouth in the previous contest and I was really delusional enough to claim luck as a factor there. 
+
+There’s no point in the garbage dramatic persona here, because what happened here was abject self destruction. No problems solved. Nil. You want to know the last time I screwed a contest this badly? Round 858. The same contest with my greatest rating loss where a fitting episode detailing that implosion was made. That contest I only got 2 problems in a Division 2 level contest. You can consider myself lucky that I was in Division 1 here since after analysis of their [B](https://codeforces.com/contest/1853/problem/B) problem, I’d have likely dropped even worse with overcomplicating it there. And guess what? Remember the dumpster fire that was my slide from CM to Specialist? I’ve done it again. Master to Expert, but now in less time than I take to write these journal entries. Incredible. There isn’t any submissions on [A](https://codeforces.com/contest/1852/problem/A) during the contest but really this was because for inane reason, I kept trying to figure out the remaining values after the operations, completely useless info. The eventual solution is blatantly simple in which you just have to figure out how many values less than x are left after the operations. Does it matter if you know if x is removed or not of course it doesn’t. The lowest x value returning 1 value not removed will always be the lowest. Another way to put it is that the solution to A is to RUN O(N) TESTS TO BINARY SEARCH THE ANSWER. This pattern has shown up OVER and OVER again and for TWO hours I did not even bother considering it. It’s one of the most fundamental patterns in these problems, and shows up nearly every contest, and I decided that going for an approach that is `O(way too long)` was a better solution. And look where I am now. I’m basically back at the same level as the start of the year, hell even the summer of last year. This is a wakeup call. The last thing I want is another failure in October’s regionals, but repeating these blunders and idiocy is simply insanity. Actually goose egging a contest. What a bloody joke.
+
+
+
+
+
+
+### [Educational Round 152](https://codeforces.com/contest/1849)
+
+Problems Solved: A, B, C, D
+
+New Rating: **1952** (+78)
+
+Performance: **2153**
+
+See, this is just proof that the previous contest was not what I was capable of. I’d have liked to get problem [E](https://codeforces.com/contest/1849/problem/E) but even though it was simply out of my ability. [My efforts there](https://github.com/alxwen711/contestSubmissionArchive/blob/main/codeforces/live%20contests/2023-3/e152/e.py) at least showed reasonable thought in building possible solutions and providing counter examples. The first 4 problems though are what I should be doing: clean and efficient execution. [C](https://codeforces.com/contest/1849/problem/C) and [D](https://codeforces.com/contest/1849/problem/D) in particular are well done for the fact I didn’t give wrong submission and both were completed in under half an hour each. It’s a low bar compared to past contests but for a get right contest, not screwing it up is a positive change.
+
+<details>
+<summary>Quick thoughts on C and D</summary>
+
+C has two observations. First is that a query like [1,6] and [4,6] on the string `000110` are effectively equivalent, so the first part is to adjust the left boundary to the leftmost `1`. Secondly is that only the number of 0’s in the segment matters since they will be sorted anyways. With these in mind, all that is needed is to keep track of the closest `1` to the right of each `0`, and the number of `0`’s in any segment of the string, for which a segment tree can be used. A sparse table can also be used with exact query methods which also takes O(log n) per query.
+
+As for D, it feels like a brute force problem, and honestly, it is one. The idea is that as long as you don’t waste a possible free painting of a tile, you will reach the optimal total. You can track if you have a free tile paint depending on the current value painted and by storing this info in a boolean. What proceeded to occur with my [submission](https://codeforces.com/contest/1849/submission/215935993) is a throwback to 2017 coding, back when all I did was control flow spam.
+ 
+</details>
+
