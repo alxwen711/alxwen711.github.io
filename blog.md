@@ -20,9 +20,9 @@ Here you can find every biweekly post I've made in self reflection. Much of this
 ### [October](https://alxwen711.github.io/blog/Oct23)
 
 ### [September](https://alxwen711.github.io/blog/Sep23)
-
-### [August](https://alxwen711.github.io/blog/Aug23)
 -->
+### [August](https://alxwen711.github.io/blog/Aug23)
+
 ### [July](https://alxwen711.github.io/blog/Jul23)
 
 ### [June](https://alxwen711.github.io/blog/Jun23)
