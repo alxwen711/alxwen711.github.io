@@ -71,5 +71,67 @@ Performance: **1786**
 This is what I meant by my previous gains being unsustainable. There is the small caveat that I mainly lost rating because I spent half an hour on [B](https://codeforces.com/contest/1858/problem/B) before noticing that [C](https://codeforces.com/contest/1858/problem/C) was much easier, but blaming this is a pitfall. Firstly, this is more just bad strategy on my part; if B is 1250 points and C is 1500 points, it implies that their difficulties *should* be similar and I should’ve checked both of them first before running head first into B. Secondly, B only took that long with a wrong submission because I had very sloppy implementation. And lastly, all of these mistakes would have been negated had I solved [D](https://codeforces.com/contest/1858/problem/D). For this I’m still trying to upsolve it, and the plan is to start the next entry with how exactly this problem works.
 
 
-## August 16th-31st
+## August 16th-29th
+
+You might be wondering why I’m separating the last two days from this entry. I’ll explain after I recap the contests. I’m going to be real, the entirety of these 16ish days can be considered a quality episode of Days of Our Programmers. There was all sorts of drama involved.
+
+### [Educational Round 153](https://codeforces.com/contest/1858)
+
+Problems Solved: A, B, C, ~~D~~
+
+New Rating: **1970** (-28)
+
+Performance: **1881**
+
+[D](https://codeforces.com/contest/1860/problem/D) I genuinely have no idea how it made it past the pretests. After the contest when hacks started occurring, I knew that my scuffed greedy method was wrong since every correct submission utilized an O(n^3) dp. There’s a sort of dignity in being hacked when you know your submission is wrong (thank you iFFT) rather than being forced to agonize for 12 hours for the inevitable result. Really, the only problem I did well on was [C](https://codeforces.com/contest/1860/problem/C). [B](https://codeforces.com/contest/1860/problem/B) had 1 WA due to egregious typo, and [A](https://codeforces.com/contest/1860/problem/A)’s saving grace was that it only took 2 WAs for me to figure out the n=2 edge cases. Had this not been an educational contest, my rating loss would’ve been greater, and really, this contest was a mess ended in dignity.
+
+I guess at least I did A through C relatively quickly?
+
+
+
+### [Harbour 2023](https://codeforces.com/contest/1858)
+
+Problems Solved: A, C, B, D, E*
+
+New Rating: **2039** (+69)
+
+Performance: **2216**
+
+Okay, this contest was something. This open competition consisted of 9 problems to be solved in 3 hours, and after [A](https://codeforces.com/contest/1864/problem/A) is when things started going a bit nuts. I skipped [B](https://codeforces.com/contest/1864/problem/B) initially not because I didn’t know how to solve the problem, but more because I wasn’t sure if my solution was correct. I also took into consideration the scoring system and decided that attempting [C](https://codeforces.com/contest/1864/problem/C) was a safer option. Looking back submitting B first before trying C would’ve scored a few more points, but the difference in rank is negligible and I went for C over B as a safety valve, so it’s a reasonable strategy. [D](https://codeforces.com/contest/1864/problem/D)’s single trick is to get the runtime from $O(n^3)$ to $O(n^2)$, and I figured out the system for this relatively quickly ([D submission](https://codeforces.com/contest/1864/submission/220556119))
+
+And then there’s [E](https://codeforces.com/contest/1864/problem/E).
+
+<details>
+<summary>Oh boy. E.</summary>
+
+With this problem, we need to first understand what Alice and Bob’s optimal strategy is. In this case, it is easiest to write both of their numbers in binary. With Alice’s first turn, she looks at the most significant 1 bit in a | b. If her value does not contain a 1 in that significant bit, then she knows a < b, otherwise she passes. This then goes to Bob, who knows Alice must have a 1 in that position. If Bob doesn’t have it, then a > b. Otherwise, Bob can begin comparing his value to the 2nd most significant 1 in a | b. This process repeats until all the bits in a | b have been compared; in this case, a = b.
+
+This information allows us to tell how many turns a game will last. If we know the sum of turns of all $n^2$ possible games, then expected turn count is trivial. In this case, let’s suppose our values can be split into groups X and Y. All values in X have a 1 bit in their $2^29$ bit value (so values like 100000…0000 (29 0’s)), while values in Y do not. This gives 4 possible cases for how the game could play out:
+
+1. Alice gets a value from X, Bob from X: They compare the first bit and continue the game (at least 2 moves)
+
+2. Alice gets a value from X, Bob from Y: Bob determines a > b, game ends in 2 moves
+
+3. Alice gets a value from Y, Bob from X: Alice determines a < b, game ends in 1 move
+
+4. Alice gets a value from Y, Bob from Y: They don’t compare the first bit continue the game (at least 1 move)
+
+Each of these cases are disjoint. Cases 1 and 4 can be directly added to the sum, while cases 2 and 3 are done recursively. Given the input size, a full tree would use about $2^30$ nodes, but with n being at most 200000, not all nodes will be required. In fact, by effectively [bucket sorting](https://en.wikipedia.org/wiki/Bucket_sort) these values, far fewer nodes are used. At ABSOLUTE worst, if somehow each value created 30 new nodes (which is still impossible), only 6 million nodes are created. Given the O(1) storage for each node, it would be close, but the time limit serves no problem here.
+
+Note that I said time limit. In 99% of problems memory isn’t an issue, but apparently, my [first implementation](https://codeforces.com/contest/1864/submission/220570699) hit MLE. It took some optimization (mainly removing ONE piece of info from each node) of this solution to pass the 256MB memory limit. With specific values, enough nodes can be created to actually screw this limit, but I got ridiculously lucky with none of the main tests screwing me over. [I’m not joking, look at this.](https://codeforces.com/contest/1864/submission/220573750)
+
+I really got hacked on this problem via MLE. But it happened after the contest so I still got the points. This is some next level luck. As for fixing this? I have an idea in mind where you pretty much do the calculations of the bucket search layer by layer so then only a single layer of the tree is stored at a time. It involves some scuffed dictionary implementation, but I’ll try this out after tomorrow’s Pinely contest.
+
+</details>
+
+
+Now as for why I’m getting this log out early:
+
+[This contest.](https://codeforces.com/blog/entry/119770)
+
+Yep.
+
+Pinely Round 2. It’s time to get my revenge. Either way, we all know ***Days of Our Programmers*** is coming out of this.
+
+[Context for the unaware, go to 2nd half](https://alxwen711.github.io/blog/Nov22)
 
