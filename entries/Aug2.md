@@ -135,3 +135,94 @@ Pinely Round 2. It’s time to get my revenge. Either way, we all know ***Days o
 
 [Context for the unaware, go to 2nd half](https://alxwen711.github.io/blog/Nov22)
 
+## August 30th-31st
+
+### [Pinely Round 2](https://codeforces.com/contest/1863)
+
+![https://www.youtube.com/watch?v=98T3PVaRrHU](docs/assets/images/doop.png)
+
+***Days of Our Programmers: A Pinely Reunion***
+
+*Tonight, on **The probable series 2 finale of DOOP,***
+
+_The show prepares for a new story arc as the summer draws to a close. With a recent stroke of divine luck in recent memory somehow places the Dragon into striking distance for a return to the Master title, there is a greater event at hand to consider: the beginning of our protagonist’s coop learning journey. In the 20 months of writing this journal several attempts at coop were made, with little success. But it is now, that I can say that in two weeks time, I will be in a co-op with Global Relay. It brings into question the future of this fine show, for as much as I’d want to continue with the same time and drive for these competitions, I have been waiting for such a real world opportunity for a long time, arguably too long. It is finally time. With the incoming coop opportunity coming, our protagonist is more prepared than ever to make the upcoming contests count._
+
+_Asides this brief sentimentality there is more pressing reason for the Dragon to fight in this next contest, for it is Pinely Round 2. For our frequent readers, you may recall the “contest” that was Pinely Round 1 back in November of 2022. It was the one where through a spectacular implosion losing 140 ELO, our protagonist was banished to a “special” place. As such, this contest has a lot riding on it. A chance for revenge. A meaningful finish to a potential competition hiatus. A true shot at returning to an orange username. There is no need to further delay, and the contest finally begins._
+
+_The ordeal begins, and for a moment, silence. The silence of 13 and a half thousand competitors at their screens and our protagonist examining the [first problem](https://codeforces.com/contest/1863/problem/A). Then, the typing begins, and the Accepted verdicts flood the leaderboards. 8 minutes in, the Dragon finally strikes. Problem A falls, albeit a bit slower than expected. Then begins the [second problem](https://codeforces.com/contest/1863/problem/B). There’s a permutation, an old callback to great traumas of Div 2B permutation struggles in the past. For a singular moment, a slight pain strikes at the Dragon. In the first Pinely competition, this was when it all fell apart._
+
+_It would not be the same today. The Dragon ices this challenge in 6 minutes, and with that, he exceeds his performance on the first Pinely competition. But a mere thirteenth of the time has passed. Our protagonist does not want more, he demands it, and thus the [third problem](https://codeforces.com/contest/1863/problem/C) commences. It’s an old classic in the Minimum EXcluded value of the array. A bit trickier, but then there is a clue within the constraints: for an array of n values, each of the values will be unique, and from 0 to n inclusive. Strangely enough, this means exactly 1 value between 0 and n will always be left out. Even more strange is when our protagonist experiments with the second testcase:_
+
+```
+Initial array: [0,1,3]
+For k = 1: [2,0,1]
+For k = 2: [3,2,0]
+For k = 3: [1,3,2]
+For k = 4: [0,1,3]
+```
+
+_A cycle. It gives critical insight to the answer, and through some basic modulo operations in his [solution](https://codeforces.com/contest/1863/submission/221114379), the Dragon claws through C. A mere 22 minutes have passed, and momentum in his wings build. Our protagonist is flying through this contest in great contrast to past failures, and now the [4th challenge](https://codeforces.com/contest/1863/problem/D) awaits. Presented in this problem is a rectangular board covered in horizontal and vertical dominoes. The question is to find a colouring such that the three pardigrams hold, or determine that such a colouring is impossible:_
+
+```
+I. Every domino must have 1 black cell and 1 white cell.
+II. Every row must have the same number of black and white cells.
+III. Every column must have the same number of black and white cells.
+```
+
+_Clearly, if only an odd number of cells in a row or column can be coloured, then no such configuration exists. Past that is a bit more complicated, but the writer of this episode first thought of the most basic case of a proper setup: two dominoes making a square:_
+
+```
+UU
+DD
+```
+
+_Then our protagonist invents a new setup called a split square:_
+```
+U……..U
+D……..D
+```
+
+_Here we can see this setup still works. It also functions similarly with horizontal dominoes. The key observation is that a proper setup must have all of its dominoes in these split square setups. The proof is a bit hard, but then we look at the first example:_
+
+```
+..LR..
+ULRU..
+DLRDUU
+..LRDD
+```
+
+_The dragon then sees it. The dominoes are all in split square formation. Then the rest becomes relatively easy; by grouping dominoes by their row/column position, they could be formed into split squares. Then it’s a matter of making sure dominoes in split squares are coloured opposite to each other. With this dagger, our protagonist defeats D, and only 41 minutes in the contest have passed. He flies to the [fifth problem](https://codeforces.com/contest/1863/problem/E). Upon inspection, it is the greatest challenge the Pinely contest has posed yet: a pine tree problem._
+
+Note: the problem isn’t actually about pine trees specifically. I just felt like putting in a terrible pun there.
+
+_Here the reasonable idea of structuring the quests in a directed graph is made. Traversing downwards from the tasks with no prerequisites could setup a case where the last tasks are completed as early as possible, and thus this code is created. There is much scuffed code involved, and leads to the glorious success of `Wrong answer on pretest 2`._
+
+_It turns out E is a difficult problem. No matter, for the first submission had legitimate error if the graph had multiple “head points”. Turns out this pine tree problem is less a tree and more a dense forest of bushes. It’s a simple fix, and using the technicalities of bfs it leads to: another WA on pretest 2. Frick. Our protagonist finds some actual struggle here, but then another consideration is made: what if the graph was traversed backwards? Suppose you knew that a quest that did not act as the prerequisite for any other quest was done at time x. Based on this information, you can determine the absolute latest time that its prerequisite quests would have to be completed. Thus, our protagonist begins going through the graph in reverse._
+
+_It still does not work out. Twice. By this point 5000 seconds have been all but fried on this one question, and no one really knows what’s happening. In normal cases, this is when the contest would end in some middling futility, but Pinely demands more, thus this agony still has another hour to it. At this point, our protagonist goes “screw it”, and traverses the graph in both directions. This isn’t as ridiculous as it sounds since the top to bottom search sets up the minimum time needed to complete a quest, and the bottom to top search sets up the latest time a quest can be started. And yet this still fails. The remaining 2+ hours of the competition simply lead to 6 ways to get E wrong, and the contest ends._ It is at this point where as the writer, I must say I am quite disappointed with how this contest ended because it leaves no conclusive ending. Did I get revenge on Pinely Round 1? I mean, I still lost rating from this and that choke was painful, but this may as well be a small inconvenience to the disastrous first round. Also, it’s not like I did bad the whole time, and by completing 4 problems, I did far better than what I did last year. It’s such an unsatisfying draw that simply requires another contest to decide. Maybe this is what fate had planned this whole time. Like the future being uncertain, so is this contest’s outcome, and the conclusion of this series of ***Days of Our Programmers***. 
+
+Problems Solved: A, B, C, D
+
+New Rating: **2022** (-17)
+
+Performance: **1968**
+
+
+Editor’s note: I really had no clue how to write a conclusion to this one. This is what happens when a seemingly critical contest of great importance ends up being incredibly mediocre.
+
+### [Educational Round 154](https://codeforces.com/contest/1861)
+
+Problems Solved: A, B, D, C
+
+New Rating: **2000** (-22)
+
+Performance: **1930**
+
+This will be more on the brief side since the previous contest took a lot of time to dramatically recap, but I can reasonably say there is one very critical roadblock I’m facing now:
+
+
+![the wall that is 2000](docs/assets/images/2000.png)
+
+This chart shows the ratings of every problem I have ever solved on Codeforces, both in contest and in practice. The majority of these problems are from contests, with the unrated section mainly being from specific ICPC practice contests. Up to 2000 rating we can see each rating section have at least 10 problems solved, most hovering around 20 or higher. It’s normal for the frequency to drop with harder ratings, but the plummet past 2000 is too much. That is a clear pattern that I can consistently bricked on the harder 2Ds and 2E problems on contests. My CF rating as a result has been relatively stagnant for the last 5 months, similar to Oct-Dec 2022 where I was cramped in mid Expert. In that sense it’s at least clear that my weakness is in skill cap, as my recent consistency in easier problems for the most part has been decent. I say for the most part because C had 4 WA submissions solely because I made a typo. 
+
+
