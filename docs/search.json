@@ -30,9 +30,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "src",
+    "title": "Main page",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hello there! I’m Alexander Wen, but just call me Alex. I am currently in the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated in the upcoming months of the 2025 school year."
+  },
+  {
+    "objectID": "index.html#competitive-programming-profiles",
+    "href": "index.html#competitive-programming-profiles",
+    "title": "Main page",
+    "section": "Competitive Programming Profiles",
+    "text": "Competitive Programming Profiles\nAs a start, here are a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.\nCodeForces\nAtCoder\nLeetcode\nCodeChef"
   },
   {
     "objectID": "about.html",

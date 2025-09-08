@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "src"
+  title: "Alexander Wen"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - walkthrough.qmd
 
 format:
   html:
