@@ -10,6 +10,14 @@ website:
         text: Home
       - about.qmd
       - walkthrough.qmd
+      - sidebar:logs 
+      
+  sidebar: 
+    - id: logs
+      title: Journals
+      contents:
+        - text: Archive
+        - href: archive.qmd
 
 format:
   html:

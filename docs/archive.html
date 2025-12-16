@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Main page – Alexander Wen</title>
+<title>Archives – Alexander Wen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -101,37 +101,63 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./walkthrough.html"> 
 <span class="menu-text">Hello, Quarto</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./logs.html"> 
-<span class="menu-text">logs.html</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-journals" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Journals</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-journals">    
+        <li>
+    <a class="dropdown-item" href="./archive.html">
+ <span class="dropdown-text">Archives</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./archive.html">Archives</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link active" data-scroll-target="#featured-projects">Featured Projects</a></li>
-  <li><a href="#competitive-programming-profiles" id="toc-competitive-programming-profiles" class="nav-link" data-scroll-target="#competitive-programming-profiles">Competitive Programming Profiles</a></li>
-  </ul>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+ <span class="menu-text">Archive</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./archive.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Archives</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Main page</h1>
+<h1 class="title">Archives</h1>
 </div>
 
 
@@ -148,21 +174,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hello there! I’m Alexander Wen, but just call me Alex. I am currently in the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated in the upcoming months of the 2025 school year.</p>
-<section id="featured-projects" class="level2">
-<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
-<p><a href="https://github.com/alxwen711/cdc_diabetes_prediction">cdc_diabetes_prediction</a> - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia.</p>
-</section>
-<section id="competitive-programming-profiles" class="level2">
-<h2 class="anchored" data-anchor-id="competitive-programming-profiles">Competitive Programming Profiles</h2>
-<p>As a start, here are a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.</p>
-<p><a href="https://codeforces.com/profile/Nolirue_Sola">CodeForces</a></p>
-<p><a href="https://atcoder.jp/users/SnowLucario">AtCoder</a></p>
-<p><a href="https://leetcode.com/u/alxwen711/">Leetcode</a></p>
-<p><a href="https://www.codechef.com/users/snowlucario">CodeChef</a></p>
+<p>This subpage is for storing the relatively old journal entries from when I logged my competitive programming contest practices more consistently until roughly August 2023. It is kept here mostly for archival purposes (links are currently broken), but I may look back through these logs later to upload them properly to this website.</p>
+<p><a href="https://alxwen711.github.io/alxwen711_website_archive/">https://alxwen711.github.io/alxwen711_website_archive/</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

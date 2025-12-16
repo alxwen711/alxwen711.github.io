@@ -1,0 +1,7 @@
+---
+title: "Archives"
+---
+
+This subpage is for storing the relatively old journal entries from when I logged my competitive programming contest practices more consistently until roughly August 2023. It is kept here mostly for archival purposes (links are currently broken), but I may look back through these logs later to upload them properly to this website.
+
+[https://alxwen711.github.io/alxwen711_website_archive/](https://alxwen711.github.io/alxwen711_website_archive/)

@@ -47,5 +47,22 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Main page",
+    "section": "Featured Projects",
+    "text": "Featured Projects\ncdc_diabetes_prediction - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia."
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archives",
+    "section": "",
+    "text": "This subpage is for storing the relatively old journal entries from when I logged my competitive programming contest practices more consistently until roughly August 2023. It is kept here mostly for archival purposes (links are currently broken), but I may look back through these logs later to upload them properly to this website.\nhttps://alxwen711.github.io/alxwen711_website_archive/",
+    "crumbs": [
+      "Archives"
+    ]
   }
 ]
