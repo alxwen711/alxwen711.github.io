@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Main page – Alexander Wen</title>
+<title>January 8th, 2026 – Alexander Wen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,8 +68,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Alexander Wen</span>
     </a>
   </div>
@@ -90,15 +119,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./walkthrough.html"> 
+    <a class="nav-link" href="../../walkthrough.html"> 
 <span class="menu-text">Hello, Quarto</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -107,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-journals">    
         <li>
-    <a class="dropdown-item" href="./archive.html">
+    <a class="dropdown-item" href="../../archive.html">
  <span class="dropdown-text">Archives</span></a>
   </li>  
     </ul>
@@ -128,9 +157,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link active" data-scroll-target="#featured-projects">Featured Projects</a></li>
-  <li><a href="#competitive-programming-profiles" id="toc-competitive-programming-profiles" class="nav-link" data-scroll-target="#competitive-programming-profiles">Competitive Programming Profiles</a></li>
-  <li><a href="#honestcode-a-blog-about-competitive-programming" id="toc-honestcode-a-blog-about-competitive-programming" class="nav-link" data-scroll-target="#honestcode-a-blog-about-competitive-programming">HonestCode: A Blog About Competitive Programming</a></li>
+  <li><a href="#sparse-tables" id="toc-sparse-tables" class="nav-link active" data-scroll-target="#sparse-tables">Sparse Tables</a></li>
   </ul>
 </nav>
     </div>
@@ -139,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Main page</h1>
+<h1 class="title">January 8th, 2026</h1>
 </div>
 
 
@@ -156,30 +183,414 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hello there! I’m Alexander Wen, but just call me Alex. I am currently in the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated in the upcoming months of the 2025 school year.</p>
-<section id="featured-projects" class="level2">
-<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
-<p><a href="https://github.com/alxwen711/cdc_diabetes_prediction">cdc_diabetes_prediction</a> - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia.</p>
-</section>
-<section id="competitive-programming-profiles" class="level2">
-<h2 class="anchored" data-anchor-id="competitive-programming-profiles">Competitive Programming Profiles</h2>
-<p>As a start, here are a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.</p>
-<p><a href="https://codeforces.com/profile/Nolirue_Sola">CodeForces</a></p>
-<p><a href="https://atcoder.jp/users/SnowLucario">AtCoder</a></p>
-<p><a href="https://leetcode.com/u/alxwen711/">Leetcode</a></p>
-<p><a href="https://www.codechef.com/users/snowlucario">CodeChef</a></p>
-</section>
-<section id="honestcode-a-blog-about-competitive-programming" class="level2">
-<h2 class="anchored" data-anchor-id="honestcode-a-blog-about-competitive-programming">HonestCode: A Blog About Competitive Programming</h2>
-<p>This is something I’m planning on actually building up seriously. Pretty much a spot for me to occasionally talk about competitive programming topics, which includes:</p>
-<ul>
-<li>Actual algorithm and data structure explanations</li>
-<li>Contest recaps</li>
-<li>Practice methods</li>
-<li>A divulge of my thoughts on AI in the context of competitive programming that is only slightly less <a href="https://codeforces.com/blog/entry/62730">Um_nik</a>-like</li>
-<li>Interesting problems</li>
-</ul>
-<p>For now though <a href="./src/HonestCode/sparsetable.html">here is a first post about Sparse Tables</a> to get this started.</p>
+<section id="sparse-tables" class="level1">
+<h1>Sparse Tables</h1>
+<p>Suppose a hiker is mapping out a mountain range. They walk across the mountain and record their current altitude in meters at important landmarks in this diagram:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/mountain.png" class="img-fluid figure-img"></p>
+<figcaption>Various mountain measurements.</figcaption>
+</figure>
+</div>
+<p>These measurements can then be expressed in an array:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Index #</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Altitude in meters</td>
+<td>800</td>
+<td>400</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+</tbody>
+</table>
+<p>From this array, the highest altitude in this entire mountain range is 1300 meters. But some travellers may only traverse part of this mountain range; for example, someone that travels from landmark 1 to 4 reaches a maximum altitude of 1000 meters, and another person who travels from landmark 7 to 8 reaches a maximum altitude of 1200 meters. These continuous segments are referred to as subarrays.</p>
+<p>Now imagine that many tourists ask about the highest altitude they can reach by traversing an arbitrary segment of this mountain range. Thus, a method to find the maximum value of any subarray in this measurement array is required, and each question must be answerable in a practically instant amount of time. An initial solution is to build a table with the maximum altitudes reached for every subarray from index <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span> like below:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>X = 1</th>
+<th>X = 2</th>
+<th>X = 3</th>
+<th>X = 4</th>
+<th>X = 5</th>
+<th>X = 6</th>
+<th>X = 7</th>
+<th>X = 8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Y = 1</td>
+<td>800</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Y = 2</td>
+<td>800</td>
+<td>400</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Y = 3</td>
+<td>800</td>
+<td>700</td>
+<td>700</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Y = 4</td>
+<td>1000</td>
+<td>1000</td>
+<td>1000</td>
+<td>1000</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Y = 5</td>
+<td>1300</td>
+<td>1300</td>
+<td>1300</td>
+<td>1300</td>
+<td>1300</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Y = 6</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Y = 7</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1200</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Y = 8</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+</tbody>
+</table>
+<p>Any tourist’s query can now be answered by instantly looking up the specific subarray in this table. This method is effective, but also tedious because for any positive value <span class="math inline">\(C\)</span>, increasing the length of this array by a factor of <span class="math inline">\(C\)</span> will increase the number of subarrays computed by a factor of <span class="math inline">\(C^2\)</span>. In this example, all 36 possible subarrays are computed, which is manageable. But suppose on larger scale, a robot took far more measurements on the mountain, such as a million. This table method would then have to compute the maximum value of each of roughly 5 trillion subarrays, which is infeasible even with a computer.</p>
+<p>There is a more efficient way because not every subarray maximum value has to be literally computed. For example, knowing that maximum values for the subarrays from index 1 to 4 and index 3 to 6 to be 1000 and 1600 respectively is enough to conclude that the maximum value for the subarray from index 1 to 6 must be 1600. This is because every index from 1 to 6 is in at least one of these subarrays, thus the maximum value for the entire subarray must be the higher of 1000 and 1600. This important observation motivates the following sparse table.</p>
+<p>Let <span class="math inline">\(L\)</span> be the length of a subarray. Start by “computing” the maximum value of every single element subarray.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subarray length</th>
+<th>X = 1</th>
+<th>X = 2</th>
+<th>X = 3</th>
+<th>X = 4</th>
+<th>X = 5</th>
+<th>X = 6</th>
+<th>X = 7</th>
+<th>X = 8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L = 1</td>
+<td>800</td>
+<td>400</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+</tbody>
+</table>
+<p>The maximum of the subarray of length <span class="math inline">\(L\)</span> from index <span class="math inline">\(X\)</span> to <span class="math inline">\(X+L-1\)</span> inclusive is equal to the higher of the maximums for the subarray from index <span class="math inline">\(X\)</span> to <span class="math inline">\(X+L/2-1\)</span> and index <span class="math inline">\(X+L/2\)</span> to <span class="math inline">\(X+L-1\)</span>. The computed subarray maximums for <span class="math inline">\(L = 1\)</span> can then be used to compute the subarray maximums for <span class="math inline">\(L = 2\)</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subarray length</th>
+<th>X = 1</th>
+<th>X = 2</th>
+<th>X = 3</th>
+<th>X = 4</th>
+<th>X = 5</th>
+<th>X = 6</th>
+<th>X = 7</th>
+<th>X = 8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L = 1</td>
+<td>800</td>
+<td>400</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td>L = 2</td>
+<td>800</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1600</td>
+<td>1200</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>This information can then be used to compute the subarray maximums for <span class="math inline">\(L = 4\)</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subarray length</th>
+<th>X = 1</th>
+<th>X = 2</th>
+<th>X = 3</th>
+<th>X = 4</th>
+<th>X = 5</th>
+<th>X = 6</th>
+<th>X = 7</th>
+<th>X = 8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L = 1</td>
+<td>800</td>
+<td>400</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td>L = 2</td>
+<td>800</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1600</td>
+<td>1200</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>L = 4</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>And lastly in this case, <span class="math inline">\(L = 8\)</span> (further steps would use larger powers of 2 for <span class="math inline">\(L\)</span>):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Subarray length</th>
+<th>X = 1</th>
+<th>X = 2</th>
+<th>X = 3</th>
+<th>X = 4</th>
+<th>X = 5</th>
+<th>X = 6</th>
+<th>X = 7</th>
+<th>X = 8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L = 1</td>
+<td>800</td>
+<td>400</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1200</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td>L = 2</td>
+<td>800</td>
+<td>700</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1600</td>
+<td>1200</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>L = 4</td>
+<td>1000</td>
+<td>1300</td>
+<td>1600</td>
+<td>1600</td>
+<td>1600</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>L = 8</td>
+<td>1600</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The maximum of any subarray from index <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> can then be computed using this sparse table in 3 steps:</p>
+<ol type="1">
+<li>Compute <span class="math inline">\(N\)</span>, the length of the subarray. (<span class="math inline">\(N = B - A + 1\)</span>)</li>
+<li>Determine <span class="math inline">\(M\)</span>, the largest power of 2 (1, 2, 4, 8, 16, 32…) satisfying <span class="math inline">\(M \leq N\)</span>.</li>
+<li>Look in the row <span class="math inline">\(L = M\)</span> and choose the larger of the values in columns <span class="math inline">\(X = A\)</span> and <span class="math inline">\(X = B - M + 1\)</span>, representing the subarrays from index <span class="math inline">\(A\)</span> to <span class="math inline">\(A + M - 1\)</span> and index <span class="math inline">\(B - M + 1\)</span> to <span class="math inline">\(B\)</span>. These subarrays are guaranteed to cover every index from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>.</li>
+</ol>
+<p>As an example, suppose a tourist wanted to know the highest altitude (maximum) between landmarks 2 to 4. Use the method to determine the maximum of the subarray from index 2 to 4:</p>
+<ol type="1">
+<li><span class="math inline">\(N = 4 - 2 + 1\)</span> =&gt; <span class="math inline">\(N = 3\)</span></li>
+<li><span class="math inline">\(M = 2\)</span> (largest power of 2 less than or equal to 3)</li>
+<li>Value in <span class="math inline">\(L = 2, X = 2\)</span> is 700; value in <span class="math inline">\(L = 2, X = 4 - 2 + 1 = 3\)</span> is 1000. Thus the maximum altitude between landmarks 2 to 4 is 1000.</li>
+</ol>
+<p>With the sparse table, only 21 total subarrays have their maximum computed, compared to 36 with the naive table approach. Where this efficiency is more pronounced is with more measurements; for any positive value <span class="math inline">\(C\)</span>, increasing the length of the array by a factor of <span class="math inline">\(C\)</span> will now only increase the number of subarrays computed by a factor of <span class="math inline">\(C\text{log}(C)\)</span>. Going back to the robot scenario, if the array consisted of a million value, the number of maximums for subarrays computed would decrease from roughly 5 trillion with a naive table to 19 million with a sparse table.</p>
 
 
 </section>

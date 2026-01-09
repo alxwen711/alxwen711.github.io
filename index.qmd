@@ -20,3 +20,16 @@ As a start, here are a series of links to my main competitive programming profil
 [Leetcode](https://leetcode.com/u/alxwen711/)
 
 [CodeChef](https://www.codechef.com/users/snowlucario)
+
+
+## HonestCode: A Blog About Competitive Programming
+
+This is something I'm planning on actually building up seriously. Pretty much a spot for me to occasionally talk about competitive programming topics, which includes:
+
+- Actual algorithm and data structure explanations
+- Contest recaps
+- Practice methods
+- A divulge of my thoughts on AI in the context of competitive programming that is only slightly less [Um_nik](https://codeforces.com/blog/entry/62730)-like
+- Interesting problems
+
+For now though [here is a first post about Sparse Tables](./src/HonestCode/sparsetable.html) to get this started.
