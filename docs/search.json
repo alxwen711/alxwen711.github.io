@@ -1,0 +1,75 @@
+[
+  {
+    "objectID": "walkthrough.html",
+    "href": "walkthrough.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#markdown",
+    "href": "walkthrough.html#markdown",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#code-cell",
+    "href": "walkthrough.html#code-cell",
+    "title": "Hello, Quarto",
+    "section": "Code Cell",
+    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n8"
+  },
+  {
+    "objectID": "walkthrough.html#equation",
+    "href": "walkthrough.html#equation",
+    "title": "Hello, Quarto",
+    "section": "Equation",
+    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]\n\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Main page",
+    "section": "",
+    "text": "Hello there! I’m Alexander Wen, but just call me Alex. I am currently in the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated in the upcoming months of the 2025 school year."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Main page",
+    "section": "Featured Projects",
+    "text": "Featured Projects\ncdc_diabetes_prediction - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia.\nimitation_game - imitation-game is a Python utility package for secure message processing. It provides a high-level interface for both Symmetric (shared secret) and Asymmetric (Public/Private key) encryption. Package link - https://test.pypi.org/project/imitation-game/"
+  },
+  {
+    "objectID": "index.html#competitive-programming-profiles",
+    "href": "index.html#competitive-programming-profiles",
+    "title": "Main page",
+    "section": "Competitive Programming Profiles",
+    "text": "Competitive Programming Profiles\nAs a start, here are a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.\nCodeForces\nAtCoder\nLeetcode\nCodeChef"
+  },
+  {
+    "objectID": "index.html#honestcode-a-blog-about-competitive-programming",
+    "href": "index.html#honestcode-a-blog-about-competitive-programming",
+    "title": "Main page",
+    "section": "HonestCode: A Blog About Competitive Programming",
+    "text": "HonestCode: A Blog About Competitive Programming\nA weekly blog for me to occasionally talk about competitive programming topics as a meaningful entirely human effort in this world where AI is becoming increasingly integrated into computer science as a whole for both good and bad reasons. Some of the general topics include:\n\nActual algorithm and data structure explanations\nContest recaps\nPractice methods\nA divulge of my thoughts on AI in the context of competitive programming that is only slightly less Um_nik-like\nInteresting problems\n\nThe first official post of HonestCode about Sparse Tables"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archives",
+    "section": "",
+    "text": "This subpage is for storing the relatively old journal entries from when I logged my competitive programming contest practices more consistently until roughly August 2023. It is kept here mostly for archival purposes (links are currently broken), but I may look back through these logs later to upload them properly to this website.\nhttps://alxwen711.github.io/alxwen711_website_archive/",
+    "crumbs": [
+      "Archives"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

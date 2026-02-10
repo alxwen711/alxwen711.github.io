@@ -24,9 +24,9 @@ As a start, here are a series of links to my main competitive programming profil
 [CodeChef](https://www.codechef.com/users/snowlucario)
 
 
-## HonestCode: A Blog About Competitive Programming
+## [HonestCode: A Blog About Competitive Programming](https://alxwen711.github.io/HonestCode)
 
-This is a spot for me to occasionally talk about competitive programming topics, which includes:
+A weekly blog for me to occasionally talk about competitive programming topics as a meaningful entirely human effort in this world where AI is becoming increasingly integrated into computer science as a whole for both good and bad reasons. Some of the general topics include:
 
 - Actual algorithm and data structure explanations
 - Contest recaps
@@ -34,4 +34,4 @@ This is a spot for me to occasionally talk about competitive programming topics,
 - A divulge of my thoughts on AI in the context of competitive programming that is only slightly less [Um_nik](https://codeforces.com/blog/entry/62730)-like
 - Interesting problems
 
- [The first official post of HonestCode about Sparse Tables](https://alxwen711.github.io/HonestCode/posts/2026/sparse-table/)
+[The first official post of HonestCode about Sparse Tables](https://alxwen711.github.io/HonestCode/posts/2026/sparse-table/)
