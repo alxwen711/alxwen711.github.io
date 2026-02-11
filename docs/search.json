@@ -39,7 +39,7 @@
     "href": "index.html#featured-projects",
     "title": "Main page",
     "section": "Featured Projects",
-    "text": "Featured Projects\ncdc_diabetes_prediction - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia."
+    "text": "Featured Projects\ncdc_diabetes_prediction - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia.\nimitation_game - imitation-game is a Python utility package for secure message processing. It provides a high-level interface for both Symmetric (shared secret) and Asymmetric (Public/Private key) encryption. Package link - https://test.pypi.org/project/imitation-game/"
   },
   {
     "objectID": "index.html#competitive-programming-profiles",
@@ -53,7 +53,7 @@
     "href": "index.html#honestcode-a-blog-about-competitive-programming",
     "title": "Main page",
     "section": "HonestCode: A Blog About Competitive Programming",
-    "text": "HonestCode: A Blog About Competitive Programming\nA weekly blog for me to occasionally talk about competitive programming topics as a meaningful entirely human effort in this world where AI is becoming increasingly integrated into computer science as a whole for both good and bad reasons. Some of the general topics include:\n\nActual algorithm and data structure explanations\nContest recaps\nPractice methods\nA divulge of my thoughts on AI in the context of competitive programming that is only slightly less Um_nik-like\nInteresting problems\n\nThe legacy first post about Sparse Tables"
+    "text": "HonestCode: A Blog About Competitive Programming\nA weekly blog for me to occasionally talk about competitive programming topics as a meaningful entirely human effort in this world where AI is becoming increasingly integrated into computer science as a whole for both good and bad reasons. Some of the general topics include:\n\nActual algorithm and data structure explanations\nContest recaps\nPractice methods\nA divulge of my thoughts on AI in the context of competitive programming that is only slightly less Um_nik-like\nInteresting problems\n\nThe first official post of HonestCode about Sparse Tables"
   },
   {
     "objectID": "archive.html",
