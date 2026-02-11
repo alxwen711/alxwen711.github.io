@@ -22,6 +22,7 @@ jobs:
           environment-file: environment.yml 
           auto-update-conda: true
           auto-activate-base: false
+          cache-environment: true
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -37,7 +38,7 @@ jobs:
           quarto render
 
       - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: quarto-dev/quarto-actions/publish@v3
         with:
           target: gh-pages
         env:
