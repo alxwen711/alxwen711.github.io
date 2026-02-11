@@ -1,3 +1,0 @@
-quartodoc
-jupyter
-yaml
