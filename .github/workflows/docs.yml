@@ -15,16 +15,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Setup Miniconda environment
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+        # Path to the conda environment file relative to the repository root
+        environment-file: environment.yml 
+        auto-update-conda: true
+        auto-activate-base: false
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Python and Dependencies
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-      - run: pip install -r requirements.txt
-      
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
