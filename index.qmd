@@ -11,13 +11,15 @@ Hello there! I'm Alexander Wen, but just call me Alex. I am currently in the UBC
 
 [imitation_game](https://github.com/UBC-MDS/imitation_game) - `imitation-game` is a Python utility package for secure message processing. It provides a high-level interface for both Symmetric (shared secret) and Asymmetric (Public/Private key) encryption. Package link - https://test.pypi.org/project/imitation-game/
 
+[Salescope](https://github.com/UBC-MDS/DSCI-532_2026_10_Salescope) - Salescope is an interactive dashboard that helps e-commerce businesses understand their customers better and reduce churn. Link to the dashboard: [https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud](https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud)
+
 ## Competitive Programming Profiles
 
-As a start, here are a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.
+Here is a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.
 
 [CodeForces](https://codeforces.com/profile/SnowLucario_Z) <a href="http://mosesxu.ca/judge-badge/codeforces/SnowLucario_Z"><img src="http://mosesxu.ca/judge-badge/codeforces/SnowLucario_Z" alt="CF Badge"></a>
 
-[AtCoder](https://atcoder.jp/users/SnowLucario)
+[AtCoder](https://atcoder.jp/users/SnowLucario) <a href="https://mosesxu.ca/judge-badge/atcoder/SnowLucario"><img src="https://mosesxu.ca/judge-badge/atcoder/SnowLucario" alt="AC Badge"></a>
 
 [Leetcode](https://leetcode.com/u/alxwen711/)
 
