@@ -9,7 +9,6 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - walkthrough.qmd
       - sidebar:logs 
       
   sidebar: 
