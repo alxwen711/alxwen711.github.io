@@ -17,9 +17,9 @@ Hello there! I'm Alexander Wen, but just call me Alex. I am currently in the UBC
 
 Here is a series of links to my main competitive programming profiles, ordered roughly in descending order of activity.
 
-[CodeForces](https://codeforces.com/profile/SnowLucario_Z) <a href="http://mosesxu.ca/judge-badge/codeforces/SnowLucario_Z"><img src="http://mosesxu.ca/judge-badge/codeforces/SnowLucario_Z" alt="CF Badge"></a>
+[CodeForces](https://codeforces.com/profile/SnowLucario_Z) <a href="https://judge-badge.mosesxu.ca/codeforces/SnowLucario_Z"><img src="https://judge-badge.mosesxu.ca/codeforces/SnowLucario_Z" alt="CF Badge"></a>
 
-[AtCoder](https://atcoder.jp/users/SnowLucario) <a href="https://mosesxu.ca/judge-badge/atcoder/SnowLucario"><img src="https://mosesxu.ca/judge-badge/atcoder/SnowLucario" alt="AC Badge"></a>
+[AtCoder](https://atcoder.jp/users/SnowLucario) <a href="https://judge-badge.mosesxu.ca/atcoder/SnowLucario_Z"><img src="https://judge-badge.mosesxu.ca/atcoder/SnowLucario_Z" alt="AC Badge"></a>
 
 [Leetcode](https://leetcode.com/u/alxwen711/)
 
