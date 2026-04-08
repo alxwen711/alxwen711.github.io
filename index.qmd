@@ -19,7 +19,7 @@ Here is a series of links to my main competitive programming profiles, ordered r
 
 [CodeForces](https://codeforces.com/profile/SnowLucario_Z) <a href="https://judge-badge.mosesxu.ca/codeforces/SnowLucario_Z"><img src="https://judge-badge.mosesxu.ca/codeforces/SnowLucario_Z" alt="CF Badge"></a>
 
-[AtCoder](https://atcoder.jp/users/SnowLucario) <a href="https://judge-badge.mosesxu.ca/atcoder/SnowLucario_Z"><img src="https://judge-badge.mosesxu.ca/atcoder/SnowLucario_Z" alt="AC Badge"></a>
+[AtCoder](https://atcoder.jp/users/SnowLucario) <a href="https://judge-badge.mosesxu.ca/atcoder/SnowLucario"><img src="https://judge-badge.mosesxu.ca/atcoder/SnowLucario" alt="AC Badge"></a>
 
 [Leetcode](https://leetcode.com/u/alxwen711/)
 
