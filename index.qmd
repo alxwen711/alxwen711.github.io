@@ -9,9 +9,20 @@ Hello there! I'm Alexander Wen, but just call me Alex. I am currently in the UBC
 
 [cdc_diabetes_prediction](https://github.com/alxwen711/cdc_diabetes_prediction) - Basic data analysis on predicting diabetes based on health and lifestyle features following sound data scientific workflows as part of the main project for DSCI 522 (Data Science Workflows), a course in the Master of Data Science program at the University of British Columbia.
 
-[imitation_game](https://github.com/UBC-MDS/imitation_game) - `imitation-game` is a Python utility package for secure message processing. It provides a high-level interface for both Symmetric (shared secret) and Asymmetric (Public/Private key) encryption. Package link - https://test.pypi.org/project/imitation-game/
+[imitation_game](https://github.com/UBC-MDS/imitation_game) - `imitation-game` is a Python utility package for secure message processing. It provides a high-level interface for both Symmetric (shared secret) and Asymmetric (Public/Private key) encryption. 
 
-[Salescope](https://github.com/UBC-MDS/DSCI-532_2026_10_Salescope) - Salescope is an interactive dashboard that helps e-commerce businesses understand their customers better and reduce churn. Link to the dashboard: [https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud](https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud)
+Package link - [https://test.pypi.org/project/imitation-game/](https://test.pypi.org/project/imitation-game/)
+
+[Salescope](https://github.com/UBC-MDS/DSCI-532_2026_10_Salescope) - Salescope is an interactive dashboard that helps e-commerce businesses understand their customers better and reduce churn. 
+
+Link to the dashboard - [https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud](https://019c8d13-5610-dd58-6134-331453179c0e.share.connect.posit.cloud)
+
+[Amazon Patio, Lawn & Garden Search](https://github.com/UBC-MDS/DSCI_575_project_alx649_joelyp) - LLM powered product recommender utilizing the 2023 Amazon Review Dataset for patio, lawn, and garden items. There are three retriever methods implemented in this project: a BM25 keyword retriever using DuckDB FTS index, a semantic retriever using FAISS and sentence-transformers, and a hybrid retriever combining both BM25 and semantic. These retrievers are supported by the usage of the `qwen3-32b` LLM model accesible through Groq for a RAG querying process. 
+
+Main branch deployment - [https://amazon-recommender-alx649-joelyp.streamlit.app](https://amazon-recommender-alx649-joelyp.streamlit.app)
+
+Demo Video - [https://www.youtube.com/watch?v=hO5vYL_v1gM&feature=youtu.be](https://www.youtube.com/watch?v=hO5vYL_v1gM&feature=youtu.be)
+
 
 ## Competitive Programming Profiles
 
