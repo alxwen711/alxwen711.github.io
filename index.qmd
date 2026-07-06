@@ -2,7 +2,7 @@
 title: "Main page"
 ---
 
-Hello there! I'm Alexander Wen, but just call me Alex. I am currently in the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated in the upcoming months of the 2025 school year. 
+Hello there! I'm Alexander Wen, but just call me Alex. I am an alumni of the UBC MDS program, and you can expect this website about my work and tangibly related competitive programming antics to be updated on a roughly monthly basis. 
 
 
 ## Featured Projects
@@ -23,6 +23,13 @@ Main branch deployment - [https://amazon-recommender-alx649-joelyp.streamlit.app
 
 Demo Video - [https://www.youtube.com/watch?v=hO5vYL_v1gM&feature=youtu.be](https://www.youtube.com/watch?v=hO5vYL_v1gM&feature=youtu.be)
 
+
+### Image Forensics & Fraud Detection AI Prototype
+
+- Masters of Data Science Capstone Collaboration with GOcxm
+- Constructed a fully reproducible multimodal machine learning pipeline for flagging of suspicious retail display images and metadata with [Amanpreet Binepal](https://github.com/amanbinepal), [Oswin Gan](https://github.com/Eggathin), and [Norton Yu](https://github.com/Spanorti08)
+- Researched and implemented algorithmic improvements for similarity detection tools and module aggregation to retain detection of most fraud cases while reducing false positive rate by 40%
+- Documented findings through automated experiments and reproducible Quarto reports
 
 ## Competitive Programming Profiles
 
